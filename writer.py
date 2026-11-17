@@ -40,9 +40,9 @@ Rules:
 - Write numbers as words when spoken ("twenty billion dollars") so the TTS reads them well.
 - Last line: a short call to follow ("Follow for more stories of money that vanished overnight.").
 - Only well-established facts. If unsure of a detail, leave it out.
-- 6-8 images. Each prompt: cinematic, photo-realistic, dark moody lighting, film grain, vertical
+- Exactly 5 images (free image quota: 2 Shorts a day). Each prompt: cinematic, photo-realistic, dark moody lighting, film grain, vertical
   composition, "no text, no logos". Never depict a real person's face: use silhouettes, hands,
-  backs, places and objects instead. Reuse images across lines; change image every 1-2 lines.
+  backs, places and objects instead. Reuse the 5 images across lines; change image every 1-3 lines.
 - sfx: "impact" on 3-4 key reveals, "riser" on the line right before the climax, "tick" on a
   money figure, otherwise "none". Whooshes on image changes are added automatically, so use
   "whoosh" rarely.

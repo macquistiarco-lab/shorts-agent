@@ -15,7 +15,7 @@ Channel: faceless English finance/business true stories told like a thriller
    collapse, scam, heist, bubble or comeback with a shocking number. Prefer stories you know
    well; facts must be solid.
 3. Write `examples/<slug>.json` yourself, following the schema and rules in `writer.py`
-   (SCHEMA and SYSTEM): 10-14 lines, 110-140 words, numbers as words, 6-8 image prompts,
+   (SCHEMA and SYSTEM): 10-14 lines, 110-140 words, numbers as words, exactly 5 image prompts (free quota),
    no real faces, sfx cues, hook_text, highlight_words. `examples/barings.json` is the model.
    No ANTHROPIC_API_KEY is needed: you are the writer.
 4. Render: `python agent.py --script examples/<slug>.json`.
