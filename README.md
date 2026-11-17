@@ -1,36 +1,57 @@
 # Shorts agent
 
-Topic -> finished YouTube Short in English (1080x1920, ~50 s), same style as the Archegos test.
+Da un argomento a uno YouTube Short finito, in inglese (1080x1920, circa 50 secondi).
 
-| Step | Tool |
+| Passaggio | Strumento |
 |---|---|
-| Script, image prompts, SFX cues, title/description | Claude (`claude-opus-5-5`, structured JSON) |
-| Images | Cloudflare Workers AI, `flux-2-klein-9b` (free daily quota) |
-| Voice | Kokoro `am_michael` (local, free, OK for monetized channels) |
-| SFX | synthesised from scratch (whoosh on cuts, impact, riser, tick) |
-| Montage | ffmpeg: Ken Burns, 1-3 word captions with yellow numbers, hook on top, drone |
+| Script, prompt immagini, effetti, titolo e descrizione | Claude (`claude-opus-5-5`) |
+| Immagini | Cloudflare Workers AI, `flux-2-klein-9b` (gratis entro il limite giornaliero) |
+| Voce | Kokoro `am_michael` (gira sul tuo PC, gratis, ok per canali monetizzati) |
+| Effetti sonori | generati da zero (whoosh, colpi, tensione, tick) |
+| Montaggio | ffmpeg: zoom lenti, sottotitoli con numeri in giallo, scritta d'apertura |
 
-## Setup
+## Installazione (una volta sola)
 
-```bash
-pip install -r requirements.txt
-curl -sSL -o models/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
-curl -sSL -o models/kokoro-v1.0.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
+1. **Installa Python 3.10 o più recente** da https://www.python.org/downloads/
+   (su Windows spunta "Add Python to PATH" durante l'installazione).
+2. **Installa ffmpeg.** Su Windows apri il Prompt dei comandi e scrivi:
+   ```
+   winget install ffmpeg
+   ```
+   Su Mac: `brew install ffmpeg`.
+3. **Scarica questo progetto:** sulla pagina GitHub del repository premi il pulsante verde
+   **Code**, poi **Download ZIP**, ed estrai lo zip in una cartella.
+4. **Apri un terminale in quella cartella** (su Windows: apri la cartella, scrivi `cmd` nella
+   barra dell'indirizzo e premi Invio) e installa le librerie:
+   ```
+   pip install -r requirements.txt
+   ```
+5. **Chiavi.** Imposta queste due variabili (su Windows, nel Prompt dei comandi):
+   ```
+   setx ANTHROPIC_API_KEY "la-tua-chiave-anthropic"
+   setx CLOUDFLARE_API_TOKEN "il-tuo-token-cloudflare"
+   ```
+   Poi chiudi e riapri il terminale.
+   - La chiave Anthropic si crea su https://console.anthropic.com (API Keys). Serve solo se
+     vuoi che sia Claude a scrivere lo script.
+   - Il token Cloudflare si crea su dash.cloudflare.com: My Profile, API Tokens, Create Token,
+     modello "Workers AI".
+
+Il modello della voce (circa 350 MB) **si scarica da solo** la prima volta che crei uno Short.
+
+## Uso
+
+```
+python agent.py "Nick Leeson and the fall of Barings Bank"
 ```
 
-Env vars: `ANTHROPIC_API_KEY` (only for topic mode), `CLOUDFLARE_API_TOKEN` (not needed in the
-Claude cloud environment, where the proxy injects it), optional `CF_IMAGE_MODEL`
-(e.g. `@cf/leonardo/lucid-origin`).
+Altri modi:
+- `python agent.py --script examples/barings.json` usa uno script già pronto (niente chiave Anthropic).
+- `python agent.py --resume output/barings` rimonta il video dopo che hai modificato
+  `script.json` o cancellato un'immagine da `img/`.
 
-## Use
+Il risultato è in `output/<nome>/`: il video `short_<nome>.mp4` e il file
+`short_<nome>_upload.txt` con titolo, descrizione e hashtag.
 
-```bash
-python agent.py "Nick Leeson and the fall of Barings Bank"   # full auto
-python agent.py --script examples/barings.json                # ready-made script
-python agent.py --resume output/barings                       # re-render after edits
-```
-
-Output in `output/<slug>/`: `short_<slug>.mp4`, `short_<slug>_upload.txt`, `script.json`, `img/`.
-To swap an image, delete `img/N.jpg` (or edit its prompt in `script.json`) and `--resume`.
-
-Before publishing: watch it, check the facts, and tick "Altered or synthetic content" in YouTube Studio.
+Prima di pubblicare: guarda il video, ricontrolla i fatti e in YouTube Studio segna
+"Contenuti alterati o sintetici" (le immagini IA sono realistiche).
