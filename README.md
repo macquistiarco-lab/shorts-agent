@@ -5,7 +5,7 @@ Da un argomento a uno YouTube Short finito, in inglese (1080x1920, circa 50 seco
 | Passaggio | Strumento |
 |---|---|
 | Script, prompt immagini, effetti, titolo e descrizione | Claude (`claude-opus-5-5`) |
-| Immagini | Cloudflare Workers AI, `flux-2-klein-9b` (gratis entro il limite giornaliero) |
+| Immagini | Cloudflare Workers AI, `flux-2-klein-4b` con ripiego su `flux-1-schnell` (gratis entro il limite giornaliero) |
 | Voce | Kokoro `am_michael` (gira sul tuo PC, gratis, ok per canali monetizzati) |
 | Effetti sonori | generati da zero (whoosh, colpi, tensione, tick) |
 | Montaggio | ffmpeg: zoom lenti, sottotitoli con numeri in giallo, scritta d'apertura |
