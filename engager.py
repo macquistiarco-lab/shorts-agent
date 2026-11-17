@@ -2,6 +2,7 @@
 """Engagement agent: first comment on each new Short + replies to viewers' comments.
 
   python engager.py first output/barings          # post the first comment (pin it in Studio)
+  python engager.py pending                       # first comment on scheduled Shorts now public
   python engager.py inbox                         # list comments still waiting for a reply
   python engager.py reply replies.json            # post replies [{"comment_id", "text"}]
   python engager.py auto                          # inbox + Claude drafts + reply (ANTHROPIC_API_KEY)
@@ -81,6 +82,40 @@ def first_comment(folder, token):
     print(f"Pin it: https://studio.youtube.com/video/{yt['id']}/comments")
 
 
+def pending_first_comments(token, days=3):
+    """Stateless: for every recent public Short with no comment from the channel, post the
+    first_comment of its examples/<slug>.json (matched by title). For Shorts uploaded with
+    --slot, which cannot take comments until they go public."""
+    import glob
+    here = os.path.dirname(os.path.abspath(__file__))
+    scripts = {}
+    for f in glob.glob(os.path.join(here, "examples", "*.json")):
+        s = json.load(open(f))
+        if s.get("title"):
+            scripts[s["title"].strip().lower()] = s
+    me, uploads = my_channel(token)
+    for vid, title in recent_videos(token, uploads, days):
+        key = title.lower().replace("#shorts", "").strip()
+        s = scripts.get(key)
+        if not s:
+            log(f"skip {title}: no matching script in examples/")
+            continue
+        try:
+            threads = api("GET", "commentThreads", token, params={
+                "part": "snippet", "videoId": vid, "maxResults": 100})["items"]
+        except RuntimeError as e:
+            log(f"skip {title}: {e}")
+            continue
+        if any(t["snippet"]["topLevelComment"]["snippet"].get("authorChannelId", {}).get("value") == me
+               for t in threads):
+            continue
+        text = (s.get("first_comment") or FIRST_COMMENT_FALLBACK).strip()
+        api("POST", "commentThreads", token, params={"part": "snippet"}, json={"snippet": {
+            "videoId": vid, "topLevelComment": {"snippet": {"textOriginal": text}}}})
+        log(f"posted on {title}: {text}")
+        print(f"Pin it: https://studio.youtube.com/video/{vid}/comments")
+
+
 # ---------- inbox & replies ----------
 
 def my_channel(token):
@@ -156,6 +191,7 @@ def main():
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
     p = sub.add_parser("first"); p.add_argument("folder")
+    sub.add_parser("pending")
     for name in ("inbox", "auto"):
         p = sub.add_parser(name)
         p.add_argument("--days", type=int, default=14, help="only Shorts published in the last N days")
@@ -166,6 +202,8 @@ def main():
     token = access_token()
     if a.cmd == "first":
         first_comment(a.folder, token)
+    elif a.cmd == "pending":
+        pending_first_comments(token)
     elif a.cmd == "inbox":
         print(json.dumps(inbox(token, a.days, a.max), indent=1, ensure_ascii=False))
     elif a.cmd == "reply":

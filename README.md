@@ -79,6 +79,7 @@ python publisher.py output/barings --dry-run   # solo anteprima di titolo/descri
 python publisher.py output/barings             # pubblica
 python publisher.py --all                      # pubblica tutti quelli non ancora pubblicati
 python publisher.py output/barings --at 2026-11-18T17:00:00Z   # programma l'uscita
+python publisher.py output/barings --slot auto  # prossimo slot libero: 14:00 o 18:00 (Roma)
 ```
 Dopo il caricamento trovi `output/<nome>/youtube.json` con il link: lo stesso Short non
 viene mai caricato due volte. Limite API: circa 6 caricamenti al giorno (quota gratuita).

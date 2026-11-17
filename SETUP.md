@@ -11,8 +11,9 @@ Serve un abbonamento Claude (Pro va bene) e un account GitHub.
 > **Canale condiviso (2 Short al giorno).** Se pubblichi sul canale di qualcun altro insieme a
 > lui: non fare il fork, fatti aggiungere come **collaboratore** al suo repository (così
 > `topics.md` è unico e non escono storie doppie); per YouTube fatti aggiungere come **gestore**
-> del suo Brand Account e al punto 4 scegli il **suo** canale; nel punto 7 usa un orario lontano
-> dal suo (es. 17:47 se il suo è alle 10:42). Salta il punto 1.
+> del suo Brand Account e al punto 4 scegli il **suo** canale; gli Short escono alle 14:00 e
+> alle 18:00 (`--slot auto` sceglie lo slot libero): nel punto 7 fai partire il task prima di uno dei due
+> (es. 12:12 o 16:12). Salta il punto 1.
 
 ## 1. La tua copia del repository
 

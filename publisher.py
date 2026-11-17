@@ -6,11 +6,13 @@
   python publisher.py --all                       # publish every Short not yet published
   python publisher.py output/barings --dry-run    # only write/print title, description, tags
   python publisher.py output/barings --privacy private --at 2026-11-18T17:00:00Z
+  python publisher.py output/barings --slot auto  # next free slot: 14:00 or 18:00 Rome time
 
 Needs YT_CLIENT_ID, YT_CLIENT_SECRET and (after --auth) YT_REFRESH_TOKEN.
 Writes output/<slug>/youtube.json with the video id, so a Short is never uploaded twice.
 """
 import argparse
+import datetime as dt
 import glob
 import http.server
 import json
@@ -30,6 +32,10 @@ TOKEN_URL = "https://oauth2.googleapis.com/token"
 UPLOAD_URL = "https://www.googleapis.com/upload/youtube/v3/videos"
 CATEGORY_EDUCATION = "27"
 TOKEN_FILE = os.path.join(HERE, "youtube_token.json")
+# Daily publishing slots (local time). Shorts are uploaded as scheduled and go public then.
+SLOTS = ["14:00", "18:00"]
+SLOT_TZ = "Europe/Rome"
+MIN_LEAD = dt.timedelta(minutes=20)  # YouTube needs publishAt a bit in the future
 
 # Channel-wide hashtags: always present, after the story-specific ones.
 BASE_TAGS = ["shorts", "finance", "money", "business", "truestory", "investing"]
@@ -155,6 +161,58 @@ def access_token():
     return r.json()["access_token"]
 
 
+# ---------- slots ----------
+
+def _utc(s):
+    return dt.datetime.fromisoformat(s.replace("Z", "+00:00"))
+
+
+def taken_times(token):
+    """Times (UTC) of the channel's recent uploads: scheduled publishAt or actual publish time.
+    Covers Shorts made from other accounts too, since it reads the channel itself."""
+    h = {"Authorization": f"Bearer {token}"}
+    api = "https://www.googleapis.com/youtube/v3"
+    r = requests.get(f"{api}/channels", params={"part": "contentDetails", "mine": "true"},
+                     headers=h, timeout=30)
+    r.raise_for_status()
+    uploads = r.json()["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+    r = requests.get(f"{api}/playlistItems", params={
+        "part": "contentDetails", "playlistId": uploads, "maxResults": 20}, headers=h, timeout=30)
+    r.raise_for_status()
+    ids = [i["contentDetails"]["videoId"] for i in r.json()["items"]]
+    if not ids:
+        return []
+    r = requests.get(f"{api}/videos", params={"part": "status,snippet", "id": ",".join(ids)},
+                     headers=h, timeout=30)
+    r.raise_for_status()
+    out = []
+    for v in r.json()["items"]:
+        st = v["status"]
+        if st.get("publishAt"):
+            out.append(_utc(st["publishAt"]))
+        elif st.get("privacyStatus") == "public":
+            out.append(_utc(v["snippet"]["publishedAt"]))
+    return out
+
+
+def next_slot(taken, now=None):
+    """First slot (UTC, RFC3339) at least MIN_LEAD from now with no video within 90 min of it."""
+    from zoneinfo import ZoneInfo
+    tz = ZoneInfo(SLOT_TZ)
+    now = now or dt.datetime.now(dt.timezone.utc)
+    day = now.astimezone(tz).date()
+    for d in range(14):
+        for s in SLOTS:
+            hh, mm = map(int, s.split(":"))
+            t = dt.datetime(day.year, day.month, day.day, hh, mm, tzinfo=tz) + dt.timedelta(days=d)
+            t = t.astimezone(dt.timezone.utc)
+            if t - now < MIN_LEAD:
+                continue
+            if all(abs(t - x) > dt.timedelta(minutes=90) for x in taken):
+                return t.strftime("%Y-%m-%dT%H:%M:%SZ")
+    sys.exit("no free slot in the next 14 days")
+
+
 # ---------- upload ----------
 
 def upload(video, meta, privacy, publish_at, token):
@@ -201,12 +259,17 @@ def publish(d, a, token=None):
     if a.dry_run:
         print(f"\nTITLE: {meta['title']}\n\n{meta['description']}\n\nTAGS: {', '.join(meta['tags'])}\n")
         return
-    log(f"uploading {slug} ({os.path.getsize(video) / 1e6:.1f} MB, {a.privacy})")
-    vid = upload(video, meta, a.privacy, a.at, token or access_token())
+    token = token or access_token()
+    if a.slot == "auto" and not a.at:
+        a.at = next_slot(taken_times(token))
+        log(f"slot: {a.at}")
+    log(f"uploading {slug} ({os.path.getsize(video) / 1e6:.1f} MB, "
+        f"{'scheduled ' + a.at if a.at else a.privacy})")
+    vid = upload(video, meta, a.privacy, a.at, token)
     url = f"https://youtube.com/shorts/{vid}"
     json.dump({"id": vid, "url": url, "privacy": a.privacy, "publish_at": a.at,
                "title": meta["title"]}, open(done, "w"), indent=1)
-    log(f"published: {url}")
+    log(f"scheduled for {a.at}: {url}" if a.at else f"published: {url}")
     return url
 
 
@@ -217,6 +280,8 @@ def main():
     ap.add_argument("--auth", action="store_true", help="one-time login, prints YT_REFRESH_TOKEN")
     ap.add_argument("--privacy", default="public", choices=["public", "unlisted", "private"])
     ap.add_argument("--at", help="schedule, RFC3339 UTC e.g. 2026-11-18T17:00:00Z")
+    ap.add_argument("--slot", choices=["auto"],
+                    help="schedule at the next free daily slot (SLOTS, Rome time)")
     ap.add_argument("--dry-run", action="store_true", help="only build title/description/tags")
     a = ap.parse_args()
 
@@ -227,6 +292,8 @@ def main():
         token = None if a.dry_run else access_token()
         for s in folders:
             publish(os.path.dirname(s), a, token)
+            if a.slot:
+                a.at = None  # each Short gets its own slot
     elif a.folder:
         publish(a.folder, a)
     else:
