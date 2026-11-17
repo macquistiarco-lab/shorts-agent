@@ -107,17 +107,16 @@ def env(name):
 def auth_flow():
     """Desktop OAuth flow on localhost: prints the refresh token to save as YT_REFRESH_TOKEN."""
     cid, secret = env("YT_CLIENT_ID"), env("YT_CLIENT_SECRET")
-    port = 8765
-    redirect = f"http://localhost:{port}"
     url = "https://accounts.google.com/o/oauth2/v2/auth?" + urllib.parse.urlencode({
-        "client_id": cid, "redirect_uri": redirect, "response_type": "code",
+        "client_id": cid, "redirect_uri": "REDIRECT", "response_type": "code",
         "scope": SCOPE, "access_type": "offline", "prompt": "consent"})
     got = {}
 
     class H(http.server.BaseHTTPRequestHandler):
         def do_GET(self):
             q = urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query)
-            got["code"] = (q.get("code") or [None])[0]
+            if "code" in q or "error" in q:  # ignore e.g. /favicon.ico
+                got["code"] = (q.get("code") or [None])[0]
             self.send_response(200)
             self.end_headers()
             self.wfile.write(b"OK, you can close this tab.")
@@ -125,9 +124,12 @@ def auth_flow():
         def log_message(self, *a):
             pass
 
+    # free port picked by the OS on 127.0.0.1, so it never clashes with other local apps
+    srv = http.server.HTTPServer(("127.0.0.1", 0), H)
+    redirect = f"http://127.0.0.1:{srv.server_address[1]}"
+    url = url.replace("REDIRECT", urllib.parse.quote(redirect, safe=""))
     print("Open this link and allow access (choose your YouTube channel):\n" + url)
     webbrowser.open(url)
-    srv = http.server.HTTPServer(("localhost", port), H)
     while "code" not in got:
         srv.handle_request()
     if not got["code"]:
