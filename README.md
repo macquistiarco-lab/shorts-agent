@@ -66,13 +66,12 @@ segnando già "Contenuti alterati o sintetici".
 1. Su https://console.cloud.google.com crea un progetto, attiva **YouTube Data API v3**.
 2. "Schermata consenso OAuth": tipo Esterno, aggiungi la tua email come utente di test,
    poi **pubblica l'app** (in modalità test il token scade dopo 7 giorni).
-3. "Credenziali" → Crea ID client OAuth → tipo **App desktop**. Copia ID e secret:
-   ```
-   setx YT_CLIENT_ID "..."
-   setx YT_CLIENT_SECRET "..."
-   ```
-4. Riapri il terminale e lancia `python publisher.py --auth`: si apre il browser, scegli il
-   canale, e il programma stampa `YT_REFRESH_TOKEN`. Salvalo con `setx YT_REFRESH_TOKEN "..."`.
+3. "Client" → Crea client → tipo **App desktop** → scarica il JSON e mettilo nella cartella del
+   progetto (`client_secret_....json`, non finisce su GitHub).
+4. Lancia `python publisher.py --auth`: si apre il browser, scegli il canale. Il token viene
+   salvato in `youtube_token.json` (anche lui fuori da GitHub) e stampato a schermo.
+5. Per la routine nel cloud: metti `YT_CLIENT_ID`, `YT_CLIENT_SECRET` (dal JSON) e
+   `YT_REFRESH_TOKEN` nelle variabili dell'ambiente `shorts-agent`.
 
 **Uso:**
 ```

@@ -27,6 +27,7 @@ SCOPE = "https://www.googleapis.com/auth/youtube.upload"
 TOKEN_URL = "https://oauth2.googleapis.com/token"
 UPLOAD_URL = "https://www.googleapis.com/upload/youtube/v3/videos"
 CATEGORY_EDUCATION = "27"
+TOKEN_FILE = os.path.join(HERE, "youtube_token.json")
 
 # Channel-wide hashtags: always present, after the story-specific ones.
 BASE_TAGS = ["shorts", "finance", "money", "business", "truestory", "investing"]
@@ -83,8 +84,21 @@ def build_metadata(script):
 
 # ---------- OAuth ----------
 
+def _from_files(name):
+    """Fallback for running on a PC: client_secret*.json downloaded from Google Cloud,
+    and youtube_token.json written by --auth (both git-ignored)."""
+    if name in ("YT_CLIENT_ID", "YT_CLIENT_SECRET"):
+        files = sorted(glob.glob(os.path.join(HERE, "client_secret*.json")))
+        if files:
+            c = json.load(open(files[0]))
+            c = c.get("installed") or c.get("web") or {}
+            return c.get("client_id" if name == "YT_CLIENT_ID" else "client_secret")
+    if name == "YT_REFRESH_TOKEN" and os.path.exists(TOKEN_FILE):
+        return json.load(open(TOKEN_FILE)).get("refresh_token")
+
+
 def env(name):
-    v = os.environ.get(name)
+    v = os.environ.get(name) or _from_files(name)
     if not v:
         sys.exit(f"missing environment variable {name} (see README, section YouTube)")
     return v
@@ -122,8 +136,10 @@ def auth_flow():
         "code": got["code"], "client_id": cid, "client_secret": secret,
         "redirect_uri": redirect, "grant_type": "authorization_code"}, timeout=30)
     r.raise_for_status()
-    print("\nYT_REFRESH_TOKEN=" + r.json()["refresh_token"])
-    print("Save it, e.g. on Windows:  setx YT_REFRESH_TOKEN \"<value>\"")
+    tok = r.json()["refresh_token"]
+    json.dump({"refresh_token": tok}, open(TOKEN_FILE, "w"))
+    print(f"\nSaved to {TOKEN_FILE}: publisher.py on this PC is ready.")
+    print("For the cloud environment, add this as YT_REFRESH_TOKEN:\n" + tok)
 
 
 def access_token():
