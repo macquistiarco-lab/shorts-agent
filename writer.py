@@ -10,7 +10,7 @@ SCHEMA = {
     "type": "object",
     "additionalProperties": False,
     "required": ["slug", "title", "description", "hashtags", "hook_text",
-                 "highlight_words", "images", "lines"],
+                 "highlight_words", "first_comment", "images", "lines"],
     "properties": {
         "slug": {"type": "string", "description": "short snake_case file name"},
         "title": {"type": "string", "description": "YouTube title, max 60 chars, ends with #shorts"},
@@ -19,6 +19,7 @@ SCHEMA = {
         "hook_text": {"type": "string", "description": "2 short ALL CAPS lines separated by \\n, shown on top in the first seconds"},
         "highlight_words": {"type": "array", "items": {"type": "string"},
                             "description": "UPPERCASE words/numbers to colour yellow in captions"},
+        "first_comment": {"type": "string", "description": "comment the channel posts and pins, max 150 chars"},
         "images": {"type": "array", "items": {
             "type": "object", "additionalProperties": False, "required": ["prompt"],
             "properties": {"prompt": {"type": "string"}}}},
@@ -46,7 +47,11 @@ Rules:
 - sfx: "impact" on 3-4 key reveals, "riser" on the line right before the climax, "tick" on a
   money figure, otherwise "none". Whooshes on image changes are added automatically, so use
   "whoosh" rarely.
-- highlight_words: the key numbers and money words as they appear in the text, uppercase."""
+- highlight_words: the key numbers and money words as they appear in the text, uppercase.
+- first_comment: the comment the channel pins under the Short to start the discussion. A sharp
+  either/or or "what would you do" question tied to this story, easy to answer in a few words,
+  max 150 chars, at most one emoji, no links (e.g. "Who's more to blame: Leeson, or the bank
+  that never checked him? 👇")."""
 
 
 def write_script(topic: str) -> dict:

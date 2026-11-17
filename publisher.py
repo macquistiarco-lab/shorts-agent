@@ -23,7 +23,9 @@ import webbrowser
 import requests
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SCOPE = "https://www.googleapis.com/auth/youtube.upload"
+# upload + comments (engager.py). Changing scopes needs a new --auth.
+SCOPE = ("https://www.googleapis.com/auth/youtube.upload "
+         "https://www.googleapis.com/auth/youtube.force-ssl")
 TOKEN_URL = "https://oauth2.googleapis.com/token"
 UPLOAD_URL = "https://www.googleapis.com/upload/youtube/v3/videos"
 CATEGORY_EDUCATION = "27"

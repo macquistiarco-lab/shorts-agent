@@ -82,3 +82,26 @@ python publisher.py output/barings --at 2026-11-18T17:00:00Z   # programma l'usc
 ```
 Dopo il caricamento trovi `output/<nome>/youtube.json` con il link: lo stesso Short non
 viene mai caricato due volte. Limite API: circa 6 caricamenti al giorno (quota gratuita).
+
+## Commenti (`engager.py`)
+
+Il terzo agente gestisce le interazioni:
+- **Primo commento:** dopo la pubblicazione scrive sotto lo Short la domanda in `first_comment`
+  dello script (es. "Chi ha più colpa: Leeson o la banca che non l'ha mai controllato? 👇").
+  YouTube non permette di fissarlo via API: in Studio → Commenti → ⋮ → **Fissa** (un tocco,
+  il comando stampa il link).
+- **Risposte:** trova i commenti degli ultimi Short a cui il canale non ha ancora risposto e
+  risponde (brevi, amichevoli, niente consigli finanziari; spam e insulti vengono saltati).
+
+**Una volta sola:** il token deve avere anche il permesso per i commenti. Rilancia
+`python publisher.py --auth` e aggiorna `YT_REFRESH_TOKEN` nell'ambiente cloud.
+
+**Uso:**
+```
+python engager.py first output/barings     # primo commento
+python engager.py inbox                    # commenti in attesa di risposta (JSON)
+python engager.py reply risposte.json      # pubblica [{"comment_id", "text"}]
+python engager.py auto                     # inbox + risposte scritte da Claude (ANTHROPIC_API_KEY)
+```
+Nella routine giornaliera le risposte le scrive Claude stesso, senza chiave Anthropic.
+Ogni commento costa 50 unità di quota (10.000 al giorno): 20 risposte = 1.000.

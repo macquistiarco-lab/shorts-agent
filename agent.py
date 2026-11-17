@@ -27,7 +27,8 @@ def log(msg):
 def upload_text(s):
     tags = " ".join("#" + h.lstrip("#") for h in s["hashtags"])
     return (f"TITLE:\n{s['title']}\n\nDESCRIPTION:\n{s['description']}\n\n{tags}\n\n"
-            "NOTE: YouTube Studio -> \"Altered or synthetic content\" = Yes (realistic AI images).\n")
+            + (f"FIRST COMMENT (pin it):\n{s['first_comment']}\n\n" if s.get("first_comment") else "")
+            + "NOTE: YouTube Studio -> \"Altered or synthetic content\" = Yes (realistic AI images).\n")
 
 
 def main():

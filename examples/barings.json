@@ -5,6 +5,7 @@
  "hashtags": ["finance", "money", "stockmarket", "barings", "trading", "history"],
  "hook_text": "ONE TRADER\nKILLED A 233-YEAR-OLD BANK",
  "highlight_words": ["TWO HUNDRED", "THIRTY-THREE", "EIGHT HUNDRED", "MILLION", "POUNDS", "ONE POUND", "88888", "SIX AND A HALF"],
+ "first_comment": "Who's more to blame: Leeson, or the bank that let one 28-year-old bet it all without checking? 👇",
  "images": [
   {"prompt": "Cinematic photo-realistic grand old London bank building facade at night, wet cobblestones, gas lamps, dark moody lighting, film grain, vertical composition, no text, no logos"},
   {"prompt": "Cinematic photo-realistic silhouette of a young trader in a colorful trading jacket on a crowded 1990s futures trading floor in Singapore, dramatic backlight, film grain, vertical composition, no text, no logos"},
