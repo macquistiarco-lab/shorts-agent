@@ -15,7 +15,8 @@ Channel: faceless English finance/business true stories told like a thriller
    Cloudflare images work through the proxy, no key needed. If Cloudflare answers with the
    daily quota error (code 4006, "daily free allocation"), stop: do not switch provider, tell the
    user the free quota is used up and the Short was skipped.
-2. Pick ONE new topic not already in `topics.md`: a real, well-documented money/business
+2. Run `git pull origin main` first (two people publish on this channel, two Shorts a day).
+   Pick ONE new topic not already in `topics.md`: a real, well-documented money/business
    collapse, scam, heist, bubble or comeback with a shocking number. Prefer stories you know
    well; facts must be solid.
 3. Write `examples/<slug>.json` yourself, following the schema and rules in `writer.py`
@@ -32,6 +33,6 @@ Channel: faceless English finance/business true stories told like a thriller
    YT_REFRESH_TOKEN). If they are missing, skip this step and say so; never ask for them in chat.
    Then post the first comment: `python engager.py first output/<slug>` (the API cannot pin:
    remind the user to pin it in Studio, the command prints the link).
-8. Append a line to `topics.md` (date, slug, title), commit `topics.md` and
+8. Append a line to `topics.md` (date, slug, title), run `git pull --rebase origin main`, commit `topics.md` and
    `examples/<slug>.json` on `main` and push. Never commit `output/` or `models/`.
 9. Final message, 3-4 lines in Italian: title, length, YouTube link, first comment to pin, replies posted, any fact you are less than sure of.

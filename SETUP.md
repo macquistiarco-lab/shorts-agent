@@ -8,6 +8,12 @@ Serve un abbonamento Claude (Pro va bene) e un account GitHub.
 
 ---
 
+> **Canale condiviso (2 Short al giorno).** Se pubblichi sul canale di qualcun altro insieme a
+> lui: non fare il fork, fatti aggiungere come **collaboratore** al suo repository (così
+> `topics.md` è unico e non escono storie doppie); per YouTube fatti aggiungere come **gestore**
+> del suo Brand Account e al punto 4 scegli il **suo** canale; nel punto 7 usa un orario lontano
+> dal suo (es. 17:47 se il suo è alle 10:42). Salta il punto 1.
+
 ## 1. La tua copia del repository
 
 1. Apri la pagina GitHub del progetto e premi **Fork**. Un repo **privato** va benissimo.
