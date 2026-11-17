@@ -1,0 +1,6 @@
+anthropic
+kokoro-onnx
+soundfile
+scipy
+numpy
+requests

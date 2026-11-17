@@ -1,0 +1,33 @@
+{
+ "slug": "barings",
+ "title": "One Trader Destroyed a 233-Year-Old Bank #shorts",
+ "description": "In 1995, a 28-year-old trader in Singapore brought down Barings, the bank of the Queen. Hidden losses, a secret account, and an earthquake.\nFollow for more stories of money that vanished overnight.",
+ "hashtags": ["finance", "money", "stockmarket", "barings", "trading", "history"],
+ "hook_text": "ONE TRADER\nKILLED A 233-YEAR-OLD BANK",
+ "highlight_words": ["TWO HUNDRED", "THIRTY-THREE", "EIGHT HUNDRED", "MILLION", "POUNDS", "ONE POUND", "88888", "SIX AND A HALF"],
+ "images": [
+  {"prompt": "Cinematic photo-realistic grand old London bank building facade at night, wet cobblestones, gas lamps, dark moody lighting, film grain, vertical composition, no text, no logos"},
+  {"prompt": "Cinematic photo-realistic silhouette of a young trader in a colorful trading jacket on a crowded 1990s futures trading floor in Singapore, dramatic backlight, film grain, vertical composition, no text, no logos"},
+  {"prompt": "Cinematic close-up of hands hiding papers in a desk drawer under a single desk lamp, tense noir mood, shadows, film grain, vertical composition, no readable text, no logos"},
+  {"prompt": "Cinematic photo-realistic old CRT computer monitor glowing green in a dark office at night, a ledger with rows of numbers beside it, film grain, vertical composition, no readable text, no logos"},
+  {"prompt": "Cinematic photo-realistic collapsed highway after a massive earthquake in a Japanese city at dawn, smoke, dramatic light, film grain, vertical composition, no text, no logos"},
+  {"prompt": "Cinematic chaotic 1990s trading floor, traders shouting, screens flashing red, papers flying, motion blur, dramatic red lighting, vertical composition, no readable text, no logos"},
+  {"prompt": "Cinematic photo-realistic single coin lying on a dark polished boardroom table, cold spotlight, empty leather chairs, somber mood, film grain, vertical composition, no text, no logos"},
+  {"prompt": "Cinematic photo-realistic empty prison cell with a narrow barred window, cold light beam falling on a folded trading jacket on the floor, somber mood, vertical composition, no text"}
+ ],
+ "lines": [
+  {"text": "In 1995, one trader destroyed a bank that had survived for two hundred and thirty-three years.", "img": 0, "sfx": "none"},
+  {"text": "He was just twenty-eight.", "img": 1, "sfx": "impact"},
+  {"text": "His name was Nick Leeson, star trader of Barings, the bank of the Queen.", "img": 1, "sfx": "none"},
+  {"text": "But his profits were a lie.", "img": 2, "sfx": "impact"},
+  {"text": "Every time he lost, he hid the loss in a secret account. Number 88888.", "img": 3, "sfx": "tick"},
+  {"text": "And he doubled his bets to win it back.", "img": 3, "sfx": "none"},
+  {"text": "He bet that Japan's market would stay calm.", "img": 2, "sfx": "riser"},
+  {"text": "Then an earthquake struck the city of Kobe.", "img": 4, "sfx": "impact"},
+  {"text": "The market crashed. His losses exploded.", "img": 5, "sfx": "none"},
+  {"text": "Eight hundred and twenty-seven million pounds. More than the bank's entire capital.", "img": 5, "sfx": "tick"},
+  {"text": "Barings collapsed, and was sold for one pound.", "img": 6, "sfx": "impact"},
+  {"text": "Leeson fled, was caught, and spent years in a Singapore prison.", "img": 7, "sfx": "none"},
+  {"text": "Follow for more stories of money that vanished overnight.", "img": 0, "sfx": "none"}
+ ]
+}
