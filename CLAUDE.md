@@ -6,8 +6,11 @@ Channel: faceless English finance/business true stories told like a thriller
 
 ## Daily routine ("crea lo Short del giorno")
 
-1. Setup (fresh machine): `pip install -q -r requirements.txt`. The voice model downloads by
-   itself on the first run. Cloudflare images work through the proxy, no key needed.
+1. Setup: the `shorts-agent` cloud environment's setup script already installs requirements and
+   the voice model; if `import kokoro_onnx` fails, run `pip install -q -r requirements.txt`.
+   Cloudflare images work through the proxy, no key needed. If Cloudflare answers with the
+   daily quota error (code 4006, "daily free allocation"), stop: do not switch provider, tell the
+   user the free quota is used up and the Short was skipped.
 2. Pick ONE new topic not already in `topics.md`: a real, well-documented money/business
    collapse, scam, heist, bubble or comeback with a shocking number. Prefer stories you know
    well; facts must be solid.
