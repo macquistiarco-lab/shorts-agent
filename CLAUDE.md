@@ -24,6 +24,8 @@ Channel: faceless English finance/business true stories told like a thriller
    its prompt in `output/<slug>/script.json` and run `python agent.py --resume output/<slug>`.
 6. Send `output/<slug>/short_<slug>.mp4` and `short_<slug>_upload.txt` to the user with
    SendUserFile (status proactive).
-7. Append a line to `topics.md` (date, slug, title), commit `topics.md` and
+7. Publish: `python publisher.py output/<slug>` (needs YT_CLIENT_ID, YT_CLIENT_SECRET,
+   YT_REFRESH_TOKEN). If they are missing, skip this step and say so; never ask for them in chat.
+8. Append a line to `topics.md` (date, slug, title), commit `topics.md` and
    `examples/<slug>.json` on `main` and push. Never commit `output/` or `models/`.
-8. Final message, 3-4 lines in Italian: title, length, any fact you are less than sure of.
+9. Final message, 3-4 lines in Italian: title, length, YouTube link, any fact you are less than sure of.

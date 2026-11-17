@@ -55,3 +55,31 @@ Il risultato è in `output/<nome>/`: il video `short_<nome>.mp4` e il file
 
 Prima di pubblicare: guarda il video, ricontrolla i fatti e in YouTube Studio segna
 "Contenuti alterati o sintetici" (le immagini IA sono realistiche).
+
+## Pubblicare su YouTube (`publisher.py`)
+
+Il secondo agente prende gli Short in `output/`, prepara titolo, descrizione e hashtag
+(`#shorts` + hashtag della storia + hashtag del canale, max 12) e li carica sul tuo canale,
+segnando già "Contenuti alterati o sintetici".
+
+**Una volta sola:**
+1. Su https://console.cloud.google.com crea un progetto, attiva **YouTube Data API v3**.
+2. "Schermata consenso OAuth": tipo Esterno, aggiungi la tua email come utente di test,
+   poi **pubblica l'app** (in modalità test il token scade dopo 7 giorni).
+3. "Credenziali" → Crea ID client OAuth → tipo **App desktop**. Copia ID e secret:
+   ```
+   setx YT_CLIENT_ID "..."
+   setx YT_CLIENT_SECRET "..."
+   ```
+4. Riapri il terminale e lancia `python publisher.py --auth`: si apre il browser, scegli il
+   canale, e il programma stampa `YT_REFRESH_TOKEN`. Salvalo con `setx YT_REFRESH_TOKEN "..."`.
+
+**Uso:**
+```
+python publisher.py output/barings --dry-run   # solo anteprima di titolo/descrizione/tag
+python publisher.py output/barings             # pubblica
+python publisher.py --all                      # pubblica tutti quelli non ancora pubblicati
+python publisher.py output/barings --at 2026-11-18T17:00:00Z   # programma l'uscita
+```
+Dopo il caricamento trovi `output/<nome>/youtube.json` con il link: lo stesso Short non
+viene mai caricato due volte. Limite API: circa 6 caricamenti al giorno (quota gratuita).
