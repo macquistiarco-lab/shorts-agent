@@ -6,7 +6,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 import requests
 
-ACCOUNT = os.environ.get("CF_ACCOUNT_ID", "e3fa680817e9e513cbaadea35d703817")
+ACCOUNT = os.environ.get("CLOUDFLARE_ACCOUNT_ID") or os.environ.get("CF_ACCOUNT_ID", "")
 # In the cloud environment the proxy injects the real token; locally set CLOUDFLARE_API_TOKEN.
 TOKEN = os.environ.get("CLOUDFLARE_API_TOKEN", "proxy-injected")
 # Neurons per vertical image (free quota: 10,000/day): klein-4b ~160, schnell ~60, klein-9b ~1370.
@@ -56,6 +56,8 @@ def _gen(prompt: str, out: str, tries: int = 3) -> None:
 
 
 def generate_images(prompts: list[str], img_dir: str) -> None:
+    if not ACCOUNT:
+        raise SystemExit("missing CLOUDFLARE_ACCOUNT_ID (Cloudflare Account ID)")
     os.makedirs(img_dir, exist_ok=True)
     jobs = [(p, os.path.join(img_dir, f"{i}.jpg")) for i, p in enumerate(prompts)
             if not os.path.exists(os.path.join(img_dir, f"{i}.jpg"))]
