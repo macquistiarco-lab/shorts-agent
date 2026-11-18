@@ -82,6 +82,11 @@ def first_comment(folder, token):
     print(f"Pin it: https://studio.youtube.com/video/{yt['id']}/comments")
 
 
+def _title_key(title):
+    """Compare titles ignoring case, the #shorts tag and extra spaces."""
+    return " ".join(title.lower().replace("#shorts", "").split())
+
+
 def pending_first_comments(token, days=3):
     """Stateless: for every recent public Short with no comment from the channel, post the
     first_comment of its examples/<slug>.json (matched by title). For Shorts uploaded with
@@ -92,11 +97,10 @@ def pending_first_comments(token, days=3):
     for f in glob.glob(os.path.join(here, "examples", "*.json")):
         s = json.load(open(f))
         if s.get("title"):
-            scripts[s["title"].strip().lower()] = s
+            scripts[_title_key(s["title"])] = s
     me, uploads = my_channel(token)
     for vid, title in recent_videos(token, uploads, days):
-        key = title.lower().replace("#shorts", "").strip()
-        s = scripts.get(key)
+        s = scripts.get(_title_key(title))
         if not s:
             log(f"skip {title}: no matching script in examples/")
             continue
@@ -110,8 +114,12 @@ def pending_first_comments(token, days=3):
                for t in threads):
             continue
         text = (s.get("first_comment") or FIRST_COMMENT_FALLBACK).strip()
-        api("POST", "commentThreads", token, params={"part": "snippet"}, json={"snippet": {
-            "videoId": vid, "topLevelComment": {"snippet": {"textOriginal": text}}}})
+        try:
+            api("POST", "commentThreads", token, params={"part": "snippet"}, json={"snippet": {
+                "videoId": vid, "topLevelComment": {"snippet": {"textOriginal": text}}}})
+        except RuntimeError as e:  # e.g. still scheduled/private
+            log(f"skip {title}: {e}")
+            continue
         log(f"posted on {title}: {text}")
         print(f"Pin it: https://studio.youtube.com/video/{vid}/comments")
 
