@@ -16,7 +16,7 @@ Channel: faceless English finance/business true stories told like a thriller
    Cloudflare images work through the proxy, no key needed. If Cloudflare answers with the
    daily quota error (code 4006, "daily free allocation"), stop: do not switch provider, tell the
    user the free quota is used up and the Short was skipped.
-2. Run `git pull origin main` first (two people publish on this channel, two Shorts a day).
+2. Run `git pull origin main` first (two scheduled runs a day, at 12:12 and 15:37 Rome time, each makes one Short).
    Pick ONE new topic not already in `topics.md`: a real, well-documented money/business
    collapse, scam, heist, bubble or comeback with a shocking number. Prefer stories you know
    well; facts must be solid.
@@ -33,7 +33,7 @@ Channel: faceless English finance/business true stories told like a thriller
 7. Publish: `python publisher.py output/<slug> --slot auto` (needs YT_CLIENT_ID, YT_CLIENT_SECRET,
    YT_REFRESH_TOKEN). If they are missing, skip this step and say so; never ask for them in chat.
    Shorts go out at 14:00 and 18:00 Rome time: `--slot auto` uploads the video as scheduled for
-   the next free slot (it reads the channel, so it also sees the other person's Shorts).
+   the next free slot (it reads the channel, so it also sees Shorts already scheduled by the other run).
    A scheduled video cannot take comments yet: call `send_later` 5 minutes after the slot with
    "run `python engager.py pending` in shorts-agent (pull main first) and tell me the link to pin".
    `engager.py pending` posts the first comment on any public recent Short that has none
