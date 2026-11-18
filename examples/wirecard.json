@@ -1,0 +1,117 @@
+{
+ "slug": "wirecard",
+ "title": "€1.9 Billion Vanished. It Never Existed. #shorts",
+ "description": "In 2020, Wirecard, a German payments giant in the DAX, admitted that 1.9 billion euros in cash probably never existed. Fake bank documents, a regulator that went after reporters, and a fugitive executive.\nFollow for more stories of money that vanished overnight.",
+ "hashtags": [
+  "finance",
+  "money",
+  "fraud",
+  "wirecard",
+  "stockmarket",
+  "germany"
+ ],
+ "hook_text": "€1.9 BILLION\nTHAT NEVER EXISTED",
+ "highlight_words": [
+  "ONE POINT NINE BILLION",
+  "EUROS",
+  "TWENTY BILLION",
+  "DAX",
+  "FAKE",
+  "BANKRUPT",
+  "ARRESTED"
+ ],
+ "first_comment": "Who failed worse: the auditors who signed off for years, or the regulator who went after the reporters? 👇",
+ "images": [
+  {
+   "prompt": "Cinematic photo-realistic empty bank vault with its heavy round door wide open, bare metal shelves, single cold light, dark moody lighting, film grain, vertical composition, no text, no logos"
+  },
+  {
+   "prompt": "Cinematic photo-realistic modern glass corporate office building on the outskirts of a German city at night, blue glow from windows, wet parking lot, dark moody lighting, film grain, vertical composition, no text, no logos"
+  },
+  {
+   "prompt": "Cinematic silhouette of a journalist seen from behind at a cluttered desk late at night, laptop glow, stacks of papers and coffee cups, noir mood, film grain, vertical composition, no readable text, no logos"
+  },
+  {
+   "prompt": "Cinematic photo-realistic stark government office corridor with frosted glass doors, a shadowy figure silhouetted behind the glass, cold fluorescent light, film grain, vertical composition, no text, no logos"
+  },
+  {
+   "prompt": "Cinematic photo-realistic aerial view of a tropical bay city skyline at night seen from high above, dark sea, distant glowing towers, storm clouds, no signs, no billboards, dark moody lighting, film grain, vertical composition, no text, no logos"
+  },
+  {
+   "prompt": "Cinematic close-up of hands holding blank official bank papers under a desk lamp, a red ink stamp beside them, tense noir shadows, film grain, vertical composition, no readable text, no logos"
+  },
+  {
+   "prompt": "Cinematic dark trading room, wall of screens showing a stock chart plunging in red, empty chairs, dramatic red lighting, motion blur, vertical composition, no readable text, no logos"
+  },
+  {
+   "prompt": "Cinematic photo-realistic small private jet on a dark rainy airfield at night, a lone figure seen from behind walking up the stairs, runway lights, film grain, vertical composition, no text, no logos"
+  }
+ ],
+ "lines": [
+  {
+   "text": "A German tech giant reported one point nine billion euros in cash. None of it existed.",
+   "img": 0,
+   "sfx": "impact"
+  },
+  {
+   "text": "The company was Wirecard, a payments star worth more than twenty billion euros.",
+   "img": 1,
+   "sfx": "tick"
+  },
+  {
+   "text": "In 2018, it even joined the DAX, Germany's top index.",
+   "img": 1,
+   "sfx": "none"
+  },
+  {
+   "text": "But a reporter at the Financial Times kept digging.",
+   "img": 2,
+   "sfx": "none"
+  },
+  {
+   "text": "He found its profits came from shadowy partners in Asia.",
+   "img": 2,
+   "sfx": "none"
+  },
+  {
+   "text": "Instead of investigating Wirecard, Germany's regulator investigated the reporters.",
+   "img": 3,
+   "sfx": "impact"
+  },
+  {
+   "text": "Then, in June 2020, the auditors asked to see the cash.",
+   "img": 4,
+   "sfx": "riser"
+  },
+  {
+   "text": "It was supposedly held in two banks in the Philippines.",
+   "img": 4,
+   "sfx": "none"
+  },
+  {
+   "text": "The banks said the documents were fake.",
+   "img": 5,
+   "sfx": "impact"
+  },
+  {
+   "text": "One week later, Wirecard went bankrupt. The first DAX company ever to do so.",
+   "img": 6,
+   "sfx": "tick"
+  },
+  {
+   "text": "The CEO was arrested. His number two vanished.",
+   "img": 7,
+   "sfx": "impact"
+  },
+  {
+   "text": "Jan Marsalek is still on the run, believed to be hiding in Russia.",
+   "img": 7,
+   "sfx": "none"
+  },
+  {
+   "text": "Follow for more stories of money that vanished overnight.",
+   "img": 0,
+   "sfx": "none"
+  }
+ ]
+}
