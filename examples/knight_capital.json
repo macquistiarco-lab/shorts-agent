@@ -1,0 +1,123 @@
+{
+ "slug": "knight_capital",
+ "title": "A Software Bug Burned $440 Million in 45 Minutes #shorts",
+ "description": "On August 1, 2012, Knight Capital, one of Wall Street's biggest traders, switched on new software. One forgotten server woke up old code and lost $440 million in 45 minutes.\nFollow for more stories of money that vanished overnight.",
+ "hashtags": [
+  "finance",
+  "money",
+  "stockmarket",
+  "knightcapital",
+  "trading",
+  "wallstreet",
+  "tech"
+ ],
+ "hook_text": "$440 MILLION GONE\nIN 45 MINUTES",
+ "highlight_words": [
+  "FOUR HUNDRED",
+  "FORTY MILLION",
+  "FORTY-FIVE MINUTES",
+  "FOUR MILLION",
+  "TEN MILLION",
+  "SEVENTY-FIVE PERCENT",
+  "ONE SERVER"
+ ],
+ "first_comment": "Who's more to blame: the engineer who missed one server, or the bosses with no kill switch? 👇",
+ "images": [
+  {
+   "prompt": "Cinematic photo-realistic Wall Street at dawn, empty street between tall dark buildings, first light, dark moody lighting, film grain, vertical composition, no text, no logos"
+  },
+  {
+   "prompt": "Cinematic photo-realistic dark data center aisle with rows of server racks, blue status lights, cold haze, film grain, vertical composition, no text, no logos"
+  },
+  {
+   "prompt": "Cinematic close-up of a single server rack with one blinking red warning light among green ones, dark room, film grain, vertical composition, no text, no logos"
+  },
+  {
+   "prompt": "Cinematic photo-realistic computer monitor glowing in a dark office, blurry lines of code, a cold cup of coffee beside the keyboard, film grain, vertical composition, no readable text, no logos"
+  },
+  {
+   "prompt": "Cinematic trading screens filled with flashing red and green charts in a dark room, motion blur, dramatic red lighting, film grain, vertical composition, no readable text, no logos"
+  },
+  {
+   "prompt": "Cinematic silhouettes of panicked office workers seen from behind in front of a wall of red screens, chaotic mood, film grain, vertical composition, no readable text, no logos"
+  },
+  {
+   "prompt": "Cinematic close-up of a hand yanking a thick network cable out of a server, sparks of light, tense mood, film grain, vertical composition, no text, no logos"
+  },
+  {
+   "prompt": "Cinematic photo-realistic empty trading office at night, abandoned chairs, monitors switched off, a single desk lamp, somber mood, film grain, vertical composition, no text, no logos"
+  }
+ ],
+ "lines": [
+  {
+   "text": "In twenty twelve, one firm lost four hundred and forty million dollars in forty-five minutes.",
+   "img": 0,
+   "sfx": "none"
+  },
+  {
+   "text": "No hacker. No rogue trader. Just one forgotten server.",
+   "img": 1,
+   "sfx": "impact"
+  },
+  {
+   "text": "Knight Capital was one of America's biggest stock traders.",
+   "img": 0,
+   "sfx": "none"
+  },
+  {
+   "text": "Days earlier, engineers installed new software on eight servers.",
+   "img": 1,
+   "sfx": "none"
+  },
+  {
+   "text": "But on one server, the update never arrived.",
+   "img": 2,
+   "sfx": "impact"
+  },
+  {
+   "text": "Instead, it woke up old code, dead for years.",
+   "img": 3,
+   "sfx": "none"
+  },
+  {
+   "text": "At the opening bell, it started buying and selling like crazy.",
+   "img": 4,
+   "sfx": "none"
+  },
+  {
+   "text": "Four million trades, in one hundred and fifty-four stocks.",
+   "img": 4,
+   "sfx": "tick"
+  },
+  {
+   "text": "Every minute, it lost about ten million dollars.",
+   "img": 5,
+   "sfx": "tick"
+  },
+  {
+   "text": "And nobody knew how to stop it.",
+   "img": 5,
+   "sfx": "riser"
+  },
+  {
+   "text": "When they finally shut it down, four hundred and forty million dollars were gone.",
+   "img": 6,
+   "sfx": "impact"
+  },
+  {
+   "text": "Knight's stock fell about seventy-five percent in two days.",
+   "img": 4,
+   "sfx": "none"
+  },
+  {
+   "text": "It needed an emergency rescue, and within a year it was sold.",
+   "img": 7,
+   "sfx": "impact"
+  },
+  {
+   "text": "Follow for more stories of money that vanished overnight.",
+   "img": 0,
+   "sfx": "none"
+  }
+ ]
+}

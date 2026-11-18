@@ -41,7 +41,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
           f"{{\\fad(150,200)}}{hook.upper().replace(chr(10), chr(92) + 'N')}"]
     words = {w.strip(".,!?").upper() for h in highlights for w in h.split()}
     hl = sorted((re.escape(w) for w in words if len(w) > 2), key=len, reverse=True)
-    hl_re = re.compile(r"(\b\d[\d,.]*%?|\$[\d,.]+\w*" + ("|" + "|".join(hl) if hl else "") + r")")
+    hl_re = re.compile(r"(\b\d[\d,.]*%?|\$[\d,.]+\w*" + (r"|\b(?:" + "|".join(hl) + r")\b" if hl else "") + r")")
     for t in timing:
         chunks, cur = [], []
         for w in t["text"].split():
