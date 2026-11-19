@@ -3,6 +3,7 @@
 Python pipeline that turns a script into a finished YouTube Short (see README.md).
 Channel: faceless English finance/business true stories told like a thriller
 ("He lost $20 billion in 48 hours"). Owner speaks Italian: reply in short Italian.
+Map of files, functions, services, env vars and scheduled runs: GRAPH.md (grep it before exploring).
 
 ## Daily routine ("crea lo Short del giorno")
 
