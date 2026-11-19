@@ -42,3 +42,10 @@ Map of files, functions, services, env vars and scheduled runs: GRAPH.md (grep i
 8. Append a line to `topics.md` (date, slug, title), run `git pull --rebase origin main`, commit `topics.md` and
    `examples/<slug>.json` on `main` and push. Never commit `output/` or `models/`.
 9. Final message, 3-4 lines in Italian: title, length, YouTube link, scheduled time (Rome), first comment to pin, replies posted, any fact you are less than sure of.
+10. Before the final message (step 9), update the HUD dashboard (https://claude.ai/artifact/Gt3sp46jubpX81nwaHEeGS): run `python hud.py`
+   (writes output/hud/videos.json and activity.json), call list_triggers and write output/hud/tasks.json
+   with the shorts-agent tasks only, as `{"rows": [{"task", "kind" (ricorrente|promemoria), "when" ("YYYY-MM-DD HH:MM" Rome),
+   "schedule", "state" (attiva|eseguita), "does"}], "meta": []}`. Upload the three files to the artifact
+   (Artifact publish, `asset: true`), then with ArtifactData `update` datasets/videos, datasets/activity and
+   datasets/tasks: new `source.url` and `updated: {at, by}`. Delete each old asset (Artifact `delete` with its id).
+   Never touch files/index.html or other datasets. If any of this fails, say so in the final message and go on.

@@ -12,6 +12,7 @@ Keep this file in sync when you add a module, env var, slot or scheduled run.
 - run:12:12        "crea lo Short del giorno", daily 12:12 Europe/Rome
 - run:15:37        "crea il secondo Short del giorno", daily 15:37 Europe/Rome
 - run:send_later   one-shot, 5 min after each slot: `engager.py pending` + link to pin
+- HUD dashboard    https://claude.ai/artifact/Gt3sp46jubpX81nwaHEeGS: videos, activity, tasks (files from hud.py), codegraph (live Graphify)
 
 ### Entry points (CLI)
 - agent.py         render: `--script examples/<slug>.json` | `--resume output/<slug>` | `<topic>` (needs ANTHROPIC_API_KEY)
@@ -78,6 +79,7 @@ engager.py -> examples/<slug>.json : pending matches video title -> first_commen
 engager.py -> YouTube Data API v3 : commentThreads (403 "disabled comments" = video still scheduled/private)
 examples/<slug>.json -> topics.md : committed together on main
 Graphify connector -> GitHub repo : indexes main
+CLAUDE.md -> hud.py : step 10 refresh the HUD dashboard files
 
 ## Gotchas
 - A scheduled (private) video refuses comments: pending posts only after it goes public.
