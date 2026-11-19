@@ -1,0 +1,33 @@
+{
+ "slug": "ftx",
+ "title": "$32 Billion Empire Gone in 9 Days #shorts",
+ "description": "In November twenty twenty-two, FTX was one of the biggest crypto exchanges on Earth. Nine days later it was bankrupt, and eight billion dollars of customer money was missing.\nFollow for more stories of money that vanished overnight.",
+ "hashtags": ["finance", "money", "crypto", "ftx", "bitcoin", "scandal"],
+ "hook_text": "A $32 BILLION EMPIRE\nGONE IN 9 DAYS",
+ "highlight_words": ["THIRTY-TWO", "BILLION", "NINE DAYS", "SIX BILLION", "EIGHT BILLION", "TWENTY-FIVE YEARS"],
+ "first_comment": "Who's more to blame: the founder, or the investors who handed him billions without checking? 👇",
+ "images": [
+  {"prompt": "Cinematic photo-realistic luxury penthouse at night overlooking a tropical harbor, glowing city lights, empty designer sofa, dark moody lighting, film grain, vertical composition, no text, no logos"},
+  {"prompt": "Cinematic photo-realistic silhouette of a young man with messy hair in shorts and t-shirt sitting alone in front of many glowing trading screens in a dark room, backlit, film grain, vertical composition, no readable text, no logos"},
+  {"prompt": "Cinematic close-up of a smartphone glowing on a dark desk at night showing an abstract red chart, tense noir mood, film grain, vertical composition, no readable text, no logos"},
+  {"prompt": "Cinematic photo-realistic secret back door between two dark office rooms, cold blue light spilling through the gap, piles of gold coins on the floor, film grain, vertical composition, no text, no logos"},
+  {"prompt": "Cinematic crowd of silhouetted people holding glowing phones in the dark, red light on their faces from behind, panic mood, motion blur, film grain, vertical composition, no readable text, no logos"},
+  {"prompt": "Cinematic photo-realistic dark data center corridor with server racks shutting down, red warning lights, smoke, dramatic lighting, film grain, vertical composition, no text, no logos"},
+  {"prompt": "Cinematic photo-realistic empty open vault with scattered papers on the floor, single cold spotlight, somber mood, film grain, vertical composition, no readable text, no logos"},
+  {"prompt": "Cinematic photo-realistic wooden judge gavel on a courtroom bench in dramatic low light, shadows, somber mood, film grain, vertical composition, no text, no logos"}
+ ],
+ "lines": [
+  {"text": "In twenty twenty-two, a crypto exchange worth thirty-two billion dollars died in just nine days.", "img": 0, "sfx": "none"},
+  {"text": "And the money inside was already gone.", "img": 6, "sfx": "impact"},
+  {"text": "FTX was run by a thirty-year-old in shorts, praised as a genius and a billionaire.", "img": 1, "sfx": "none"},
+  {"text": "Then a leaked balance sheet showed his trading firm was built on a token he invented himself.", "img": 2, "sfx": "impact"},
+  {"text": "Customers panicked. Six billion dollars in withdrawals hit in seventy-two hours.", "img": 4, "sfx": "tick"},
+  {"text": "But FTX couldn't pay.", "img": 4, "sfx": "none"},
+  {"text": "Customer deposits had been secretly sent to his trading firm, and spent.", "img": 3, "sfx": "impact"},
+  {"text": "A rival offered to buy the company. One day later, it walked away.", "img": 2, "sfx": "riser"},
+  {"text": "On November eleventh, FTX filed for bankruptcy.", "img": 5, "sfx": "impact"},
+  {"text": "About eight billion dollars of customer money was missing.", "img": 6, "sfx": "tick"},
+  {"text": "Sam Bankman-Fried was convicted of fraud and sentenced to twenty-five years in prison.", "img": 7, "sfx": "none"},
+  {"text": "Follow for more stories of money that vanished overnight.", "img": 0, "sfx": "none"}
+ ]
+}
