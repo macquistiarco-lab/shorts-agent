@@ -4,7 +4,7 @@
  "description": "In 1998, a hedge fund run by Wall Street legends and two Nobel Prize winners lost $4.6 billion in less than four months, and the Federal Reserve had to step in.\nThe story of Long-Term Capital Management.\nFollow for more stories of money that vanished overnight.",
  "hashtags": ["finance", "money", "wallstreet", "hedgefund", "ltcm", "investing"],
  "hook_text": "TWO NOBEL WINNERS\nLOST $4.6 BILLION",
- "highlight_words": ["NOBEL", "BILLION", "FOUR", "FORTY", "TWENTY-FIVE", "ONE TRILLION", "THREE POINT SIX", "FOURTEEN"],
+ "highlight_words": ["NOBEL", "BILLION", "FOUR", "FORTY", "TWENTY-FIVE", "THREE POINT SIX", "FOURTEEN"],
  "first_comment": "If two Nobel winners couldn't beat the market with all that math, can anyone? 👇",
  "images": [
   {"prompt": "Cinematic photo-realistic glass hedge fund office in Greenwich Connecticut at dusk, quiet trees, one lit floor, cold blue tones, film grain, vertical composition, no text, no logos"},
@@ -17,18 +17,17 @@
   {"prompt": "Cinematic photo-realistic empty hedge fund office at dawn, monitors switched off, a single coffee cup left on a desk, dust in the light beams, somber mood, film grain, vertical composition, no text"}
  ],
  "lines": [
-  {"text": "In 1998, two Nobel Prize winners lost four point six billion dollars in less than four months.", "img": 0, "sfx": "none"},
+  {"text": "In nineteen ninety-eight, two Nobel Prize winners lost four point six billion dollars in less than four months.", "img": 0, "sfx": "none"},
   {"text": "And they almost took Wall Street down with them.", "img": 0, "sfx": "impact"},
   {"text": "The fund was called Long-Term Capital Management.", "img": 1, "sfx": "none"},
-  {"text": "Its partners included the economists who had just won the Nobel Prize for pricing options.", "img": 1, "sfx": "none"},
+  {"text": "Its partners included two economists who had just won the Nobel Prize.", "img": 1, "sfx": "none"},
   {"text": "Their math found tiny gaps between prices. So they borrowed huge sums to make them pay.", "img": 2, "sfx": "none"},
   {"text": "For every dollar they had, they bet about twenty-five.", "img": 2, "sfx": "tick"},
   {"text": "At first, it worked. Investors made around forty percent a year.", "img": 3, "sfx": "none"},
-  {"text": "Then, in August 1998, Russia stopped paying its debts.", "img": 4, "sfx": "riser"},
+  {"text": "Then, in August nineteen ninety-eight, Russia stopped paying its debts.", "img": 4, "sfx": "riser"},
   {"text": "Markets panicked, and every bet moved the wrong way at once.", "img": 5, "sfx": "impact"},
-  {"text": "The fund was bleeding hundreds of millions a day.", "img": 5, "sfx": "none"},
   {"text": "If it collapsed, the shock could hit banks around the world.", "img": 6, "sfx": "none"},
-  {"text": "So the Federal Reserve called fourteen banks into one room. They put in three point six billion dollars to stop the fall.", "img": 6, "sfx": "impact"},
+  {"text": "So the Fed gathered fourteen banks in one room. They put in three point six billion dollars.", "img": 6, "sfx": "impact"},
   {"text": "Follow for more stories of money that vanished overnight.", "img": 7, "sfx": "none"}
  ]
 }

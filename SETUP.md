@@ -13,7 +13,7 @@ Serve un abbonamento Claude (Pro va bene) e un account GitHub.
 > `topics.md` è unico e non escono storie doppie); per YouTube fatti aggiungere come **gestore**
 > del suo Brand Account e al punto 4 scegli il **suo** canale; gli Short escono alle 14:00 e
 > alle 18:00 (`--slot auto` sceglie lo slot libero): nel punto 7 fai partire il task prima di uno dei due
-> (es. 12:12 o 16:12). Salta il punto 1.
+> (es. 12:12 o 15:37). Salta il punto 1.
 
 ## 1. La tua copia del repository
 
@@ -32,7 +32,8 @@ Serve un abbonamento Claude (Pro va bene) e un account GitHub.
 1. Crea un account su https://dash.cloudflare.com.
 2. Copia il tuo **Account ID**: lo trovi nella home del dashboard, colonna di destra,
    oppure nell'URL.
-3. **My Profile → API Tokens → Create Token**, modello **"Workers AI"**. Copia il token.
+3. **My Profile → API Tokens → Create Token**, modello **"Workers AI"**. Non impostare il filtro
+   sugli indirizzi IP (le sessioni cloud cambiano IP: errore 9109). Copia il token.
 
 La quota gratuita giornaliera basta per uno Short al giorno.
 
@@ -63,16 +64,21 @@ Su https://claude.ai/code apri le impostazioni degli ambienti e creane uno nuovo
   api.cloudflare.com
   oauth2.googleapis.com
   www.googleapis.com
+  github.com
+  objects.githubusercontent.com
+  release-assets.githubusercontent.com
   ```
+  (gli ultimi tre servono a scaricare il modello della voce).
 - **Variabili d'ambiente:**
   ```
-  CF_ACCOUNT_ID=<il tuo Account ID Cloudflare>
+  CLOUDFLARE_ACCOUNT_ID=<il tuo Account ID Cloudflare>
   YT_CLIENT_ID=<client_id>
   YT_CLIENT_SECRET=<client_secret>
   YT_REFRESH_TOKEN=<refresh token>
   ```
-  `CF_ACCOUNT_ID` è **obbligatoria**: senza, il codice usa l'account Cloudflare dell'autore
-  originale e non funziona.
+  `CLOUDFLARE_ACCOUNT_ID` è **obbligatoria**: senza, `images.py` si ferma con un errore.
+  Scrivi i valori senza virgolette né spazi. `YT_REFRESH_TOKEN` deve venire dallo stesso client
+  di `YT_CLIENT_ID` (altrimenti YouTube risponde `invalid_grant`).
 - **Network secret** (credenziale gestita dal proxy) per l'host `api.cloudflare.com`:
   header `Authorization`, tipo `Bearer`, valore = il token Cloudflare del punto 3.
 - **Script di setup:**
@@ -103,8 +109,14 @@ Se qualcosa non va, chiedi a Claude nella stessa sessione.
 
 Nella stessa sessione chiedi a Claude:
 
-> Crea un task programmato "Short giornaliero", ogni giorno alle 10:42 ora di Roma, modello
+> Crea un task programmato "Short giornaliero", ogni giorno alle 12:12 ora di Roma, modello
 > Sonnet, sessione nuova a ogni esecuzione, con notifiche push, che esegua questo prompt:
+
+Importante: nel task deve essere selezionato il **repository** (il tuo fork) e l'ambiente
+`shorts-agent`. Se il task non ha il repository, lo Short viene pubblicato ma il push su GitHub
+fallisce con errore 403 e `topics.md` non si aggiorna. Il modo più sicuro è creare il task
+dall'interfaccia (claude.ai/code → Routine → Nuova) scegliendo lì repository e ambiente.
+Per due Short al giorno crea un secondo task alle 15:37.
 
 ```
 Crea lo Short del giorno per il canale YouTube.
@@ -113,9 +125,11 @@ Se il repository <tuo-utente>/<tuo-fork> non è già nella sessione, aggiungilo 
 (access "push") e clonalo. Poi leggi CLAUDE.md nella radice del repository e segui per intero
 la sezione "Daily routine": scegli un argomento nuovo non presente in topics.md, scrivi tu lo
 script in examples/<slug>.json, genera il video con agent.py, controlla alcuni fotogrammi,
-mandami mp4 e testo di caricamento con SendUserFile, aggiorna topics.md, fai commit e push su main.
+mandami mp4 e testo di caricamento con SendUserFile, pubblica con publisher.py --slot auto,
+aggiorna topics.md, fai commit e push su main.
 
-Concludi con 3-4 righe in italiano: titolo, durata ed eventuali fatti da ricontrollare.
+Concludi con 3-4 righe in italiano: titolo, durata, link YouTube, orario di uscita, primo
+commento da fissare ed eventuali fatti da ricontrollare.
 ```
 
 Sostituisci `<tuo-utente>/<tuo-fork>` con il tuo repository.

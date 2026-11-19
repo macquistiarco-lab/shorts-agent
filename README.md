@@ -26,16 +26,17 @@ Da un argomento a uno YouTube Short finito, in inglese (1080x1920, circa 50 seco
    ```
    pip install -r requirements.txt
    ```
-5. **Chiavi.** Imposta queste due variabili (su Windows, nel Prompt dei comandi):
+5. **Chiavi.** Imposta queste variabili (su Windows, nel Prompt dei comandi):
    ```
    setx ANTHROPIC_API_KEY "la-tua-chiave-anthropic"
+   setx CLOUDFLARE_ACCOUNT_ID "il-tuo-account-id-cloudflare"
    setx CLOUDFLARE_API_TOKEN "il-tuo-token-cloudflare"
    ```
    Poi chiudi e riapri il terminale.
    - La chiave Anthropic si crea su https://console.anthropic.com (API Keys). Serve solo se
      vuoi che sia Claude a scrivere lo script.
    - Il token Cloudflare si crea su dash.cloudflare.com: My Profile, API Tokens, Create Token,
-     modello "Workers AI".
+     modello "Workers AI" (senza filtro sugli IP). L'Account ID è nella home del dashboard.
 
 Il modello della voce (circa 350 MB) **si scarica da solo** la prima volta che crei uno Short.
 

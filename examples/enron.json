@@ -17,13 +17,13 @@
   {"prompt": "Cinematic photo-realistic empty courtroom with wooden benches and a judge's bench lit by a cold beam of light, somber mood, film grain, vertical composition, no text, no logos"}
  ],
  "lines": [
-  {"text": "In 2000, Enron was the seventh biggest company in America.", "img": 0, "sfx": "none"},
+  {"text": "In two thousand, Enron was the seventh biggest company in America.", "img": 0, "sfx": "none"},
   {"text": "A year later, it was gone.", "img": 0, "sfx": "impact"},
   {"text": "Magazines called it the most innovative company in the country, six years in a row.", "img": 1, "sfx": "none"},
   {"text": "Its stock hit about ninety dollars a share.", "img": 1, "sfx": "tick"},
   {"text": "But the profits were not what they seemed.", "img": 2, "sfx": "impact"},
   {"text": "Billions in debt were hidden inside secret side companies, off the books.", "img": 3, "sfx": "none"},
-  {"text": "In October 2001, the truth started to leak out.", "img": 4, "sfx": "riser"},
+  {"text": "In October two thousand and one, the truth started to leak out.", "img": 4, "sfx": "riser"},
   {"text": "Its auditors were shredding documents.", "img": 4, "sfx": "none"},
   {"text": "The stock collapsed to less than one dollar.", "img": 5, "sfx": "impact"},
   {"text": "In December, Enron filed for bankruptcy, the largest in American history at the time.", "img": 5, "sfx": "none"},

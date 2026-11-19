@@ -1,10 +1,10 @@
 {
  "slug": "barings",
  "title": "One Trader Destroyed a 233-Year-Old Bank #shorts",
- "description": "In 1995, a 28-year-old trader in Singapore brought down Barings, the bank of the Queen. Hidden losses, a secret account, and an earthquake.\nFollow for more stories of money that vanished overnight.",
+ "description": "In nineteen ninety-five, a 28-year-old trader in Singapore brought down Barings, the bank of the Queen. Hidden losses, a secret account, and an earthquake.\nFollow for more stories of money that vanished overnight.",
  "hashtags": ["finance", "money", "stockmarket", "barings", "trading", "history"],
  "hook_text": "ONE TRADER\nKILLED A 233-YEAR-OLD BANK",
- "highlight_words": ["TWO HUNDRED", "THIRTY-THREE", "EIGHT HUNDRED", "MILLION", "POUNDS", "ONE POUND", "88888", "SIX AND A HALF"],
+ "highlight_words": ["TWO HUNDRED", "THIRTY-THREE", "EIGHT HUNDRED", "MILLION", "POUNDS", "ONE POUND", "EIGHT EIGHT EIGHT"],
  "first_comment": "Who's more to blame: Leeson, or the bank that let one 28-year-old bet it all without checking? 👇",
  "images": [
   {"prompt": "Cinematic photo-realistic grand old London bank building facade at night, wet cobblestones, gas lamps, dark moody lighting, film grain, vertical composition, no text, no logos"},
@@ -17,11 +17,11 @@
   {"prompt": "Cinematic photo-realistic empty prison cell with a narrow barred window, cold light beam falling on a folded trading jacket on the floor, somber mood, vertical composition, no text"}
  ],
  "lines": [
-  {"text": "In 1995, one trader destroyed a bank that had survived for two hundred and thirty-three years.", "img": 0, "sfx": "none"},
+  {"text": "In nineteen ninety-five, one trader destroyed a bank that had survived for two hundred and thirty-three years.", "img": 0, "sfx": "none"},
   {"text": "He was just twenty-eight.", "img": 1, "sfx": "impact"},
   {"text": "His name was Nick Leeson, star trader of Barings, the bank of the Queen.", "img": 1, "sfx": "none"},
   {"text": "But his profits were a lie.", "img": 2, "sfx": "impact"},
-  {"text": "Every time he lost, he hid the loss in a secret account. Number 88888.", "img": 3, "sfx": "tick"},
+  {"text": "Every time he lost, he hid the loss in a secret account. Number eight eight eight eight eight.", "img": 3, "sfx": "tick"},
   {"text": "And he doubled his bets to win it back.", "img": 3, "sfx": "none"},
   {"text": "He bet that Japan's market would stay calm.", "img": 2, "sfx": "riser"},
   {"text": "Then an earthquake struck the city of Kobe.", "img": 4, "sfx": "impact"},
