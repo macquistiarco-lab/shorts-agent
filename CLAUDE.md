@@ -7,6 +7,9 @@ Map of files, functions, services, env vars and scheduled runs: GRAPH.md (grep i
 
 ## Daily routine ("crea lo Short del giorno")
 
+This file and SYSTEM in `writer.py` win over any summary in a scheduled run's prompt (older prompts say
+10-14 lines, 110-140 words: ignore that, use the limits below).
+
 1. Setup: the `shorts-agent` cloud environment's setup script already installs requirements and
    the voice model; if `import kokoro_onnx` fails, run `pip install -q -r requirements.txt`.
    Then answer comments on the last Shorts (only if YT_* variables exist): run
