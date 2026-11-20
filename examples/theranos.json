@@ -1,0 +1,32 @@
+{
+ "slug": "theranos",
+ "title": "A $9 Billion Company. The Machine Never Worked. #shorts",
+ "description": "Theranos promised hundreds of blood tests from a single drop of blood and was valued at nine billion dollars. Behind closed doors, the technology never worked.\nFollow for more fortunes made and lost.",
+ "hashtags": ["finance", "money", "theranos", "startup", "fraud", "siliconvalley"],
+ "hook_text": "$9 BILLION VALUATION\nZERO WORKING MACHINES",
+ "highlight_words": ["NINE BILLION", "DOLLAR", "HUNDREDS OF MILLIONS", "ZERO", "ELEVEN YEARS"],
+ "first_comment": "Who failed worse: the founder, or the famous investors who never asked to see it work? 👇",
+ "images": [
+  {"prompt": "Cinematic photo-realistic single drop of bright red blood falling onto a sleek white futuristic lab machine in a dark room, dramatic spotlight, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic tiny glass vial of blood held between gloved fingertips, cold blue lab light, shallow depth of field, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic glossy Silicon Valley glass headquarters at night with glowing windows, dramatic lighting, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic silhouette of a woman in a black turtleneck seen from behind on a dark stage under a single spotlight, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic hidden back room of a laboratory with old bulky blood analyzer machines, flickering fluorescent light, secretive mood, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic anonymous person seen from behind whispering into a phone in a dark parking lot at night, tense noir mood, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic stack of newspapers on a dark table under a harsh lamp, blurred unreadable columns, dramatic shadows, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic empty abandoned lab with white machines covered in dust and sheets, cold light through blinds, somber mood, film grain, vertical composition, no text, no logos, no signs"}
+ ],
+ "lines": [
+  {"text": "A nine billion dollar company, built on a machine that never worked.", "img": 0, "sfx": "impact"},
+  {"text": "So how did it fool everyone for over ten years?", "img": 2, "sfx": "none"},
+  {"text": "Theranos promised hundreds of tests from one drop of blood.", "img": 1, "sfx": "none"},
+  {"text": "Investors poured in hundreds of millions. Pharmacies put it in their stores.", "img": 2, "sfx": "tick"},
+  {"text": "Its founder became a billionaire on paper.", "img": 3, "sfx": "impact"},
+  {"text": "But secretly, most tests ran on other companies' machines.", "img": 4, "sfx": "impact"},
+  {"text": "Then employees started talking to a reporter.", "img": 5, "sfx": "riser"},
+  {"text": "In twenty fifteen, the Wall Street Journal exposed it all.", "img": 6, "sfx": "impact"},
+  {"text": "Nine billion dollars fell to zero. Elizabeth Holmes got over eleven years for fraud.", "img": 7, "sfx": "tick"},
+  {"text": "All of it, from a single drop of blood.", "img": 0, "sfx": "none"},
+  {"text": "Follow for more fortunes made and lost.", "img": 0, "sfx": "none"}
+ ]
+}
