@@ -18,12 +18,17 @@ Map of files, functions, services, env vars and scheduled runs: GRAPH.md (grep i
    daily quota error (code 4006, "daily free allocation"), stop: do not switch provider, tell the
    user the free quota is used up and the Short was skipped.
 2. Run `git pull origin main` first (two scheduled runs a day, at 12:12 and 15:37 Rome time, each makes one Short).
-   Pick ONE new topic not already in `topics.md`: a real, well-documented money/business
-   collapse, scam, heist, bubble or comeback with a shocking number. Prefer stories you know
-   well; facts must be solid.
+   Pick ONE new topic not already in `topics.md`, alternating the two kinds (see SYSTEM in `writer.py`):
+   the run before 14:00 Rome makes a RISE story (someone who made a huge amount fast, legally and
+   documented: a trade, a startup sale, a bet against the market, a viral product), the later run a
+   FALL story (collapse, scam, heist, bubble). Both need a shocking number. Prefer stories you know
+   well; facts must be solid. Add `| rise` or `| fall` at the end of the topics.md line.
 3. Write `examples/<slug>.json` yourself, following the schema and rules in `writer.py`
-   (SCHEMA and SYSTEM): 10-14 lines, 110-140 words, numbers as words, exactly 8 image prompts,
-   no real faces, sfx cues, hook_text, highlight_words, first_comment. `examples/barings.json` is the model.
+   (SCHEMA and SYSTEM): 9-12 lines, 85-110 words (30-40 s), a hook line under 2 seconds that starts
+   on the payoff, an open question kept until the end, a last line that loops back to the hook (no
+   "follow for more"), exactly 8 image prompts, no real faces, sfx cues, hook_text, highlight_words,
+   first_comment. `examples/barings.json` shows the JSON format only: its hook and ending follow
+   older rules, SYSTEM wins.
    No ANTHROPIC_API_KEY is needed: you are the writer.
 4. Render: `python agent.py --script examples/<slug>.json`.
 5. Check it: extract 4-5 frames with ffmpeg and look at them (captions readable, images fit,
