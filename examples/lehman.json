@@ -1,0 +1,116 @@
+{
+ "slug": "lehman",
+ "title": "A $639 Billion Bank Died Over One Weekend #shorts",
+ "description": "In September two thousand eight, Lehman Brothers, a bank that had survived for one hundred and fifty-eight years, filed the biggest bankruptcy in American history. Thirty to one leverage, an accounting trick and a weekend with no buyer.\nFollow for more stories of money that vanished overnight.",
+ "hashtags": [
+  "finance",
+  "money",
+  "lehmanbrothers",
+  "2008",
+  "wallstreet",
+  "history"
+ ],
+ "hook_text": "A $639 BILLION BANK\nDIED OVER ONE WEEKEND",
+ "highlight_words": [
+  "SIX HUNDRED",
+  "THIRTY-NINE",
+  "BILLION",
+  "THIRTY DOLLARS",
+  "FIFTY BILLION",
+  "TWENTY-FIVE THOUSAND"
+ ],
+ "first_comment": "Should the government have saved Lehman, or was letting it fail the right call? 👇",
+ "images": [
+  {
+   "prompt": "Cinematic photo-realistic Manhattan glass skyscraper at night in heavy rain, glowing windows, dark storm clouds, dark moody lighting, film grain, vertical composition, no text, no logos"
+  },
+  {
+   "prompt": "Cinematic photo-realistic old 19th century stone bank ledger room with brass lamps and leather books, warm dim light, film grain, vertical composition, no readable text, no logos"
+  },
+  {
+   "prompt": "Cinematic photo-realistic row of identical suburban houses at dusk with for sale signs, empty street, eerie mood, film grain, vertical composition, no readable text, no logos"
+  },
+  {
+   "prompt": "Cinematic close-up of a tall unstable tower of stacked gold coins balanced on a single coin on a dark table, dramatic spotlight, film grain, vertical composition, no text, no logos"
+  },
+  {
+   "prompt": "Cinematic close-up of hands sliding a thick folder of documents under a table in a dark boardroom, tense noir mood, shadows, film grain, vertical composition, no readable text, no logos"
+  },
+  {
+   "prompt": "Cinematic photo-realistic empty boardroom late at night, long table with untouched coffee cups and scattered papers, city lights through window, film grain, vertical composition, no readable text, no logos"
+  },
+  {
+   "prompt": "Cinematic photo-realistic silhouettes of office workers from behind carrying cardboard boxes out of a skyscraper lobby, morning light, somber mood, film grain, vertical composition, no text, no logos"
+  },
+  {
+   "prompt": "Cinematic photo-realistic giant wall of trading screens all flashing red in a dark empty trading floor, dramatic red lighting, film grain, vertical composition, no readable text, no logos"
+  }
+ ],
+ "lines": [
+  {
+   "text": "In two thousand eight, a bank with six hundred and thirty-nine billion dollars in assets died over one weekend.",
+   "img": 0,
+   "sfx": "none"
+  },
+  {
+   "text": "The biggest bankruptcy in American history.",
+   "img": 0,
+   "sfx": "impact"
+  },
+  {
+   "text": "Lehman Brothers had survived one hundred and fifty-eight years.",
+   "img": 1,
+   "sfx": "none"
+  },
+  {
+   "text": "But it had bet everything on American housing.",
+   "img": 2,
+   "sfx": "none"
+  },
+  {
+   "text": "It borrowed about thirty dollars for every dollar it really had.",
+   "img": 3,
+   "sfx": "tick"
+  },
+  {
+   "text": "When home prices fell, its mortgage bonds started to rot.",
+   "img": 2,
+   "sfx": "impact"
+  },
+  {
+   "text": "To look safer, it used an accounting trick called Repo one-oh-five.",
+   "img": 4,
+   "sfx": "none"
+  },
+  {
+   "text": "It quietly moved fifty billion dollars off its books, right before its reports.",
+   "img": 4,
+   "sfx": "tick"
+  },
+  {
+   "text": "Then came the final weekend. The government refused to save it, and every buyer walked away.",
+   "img": 5,
+   "sfx": "riser"
+  },
+  {
+   "text": "On Monday, September fifteenth, Lehman filed for bankruptcy.",
+   "img": 7,
+   "sfx": "impact"
+  },
+  {
+   "text": "Around twenty-five thousand employees carried their careers out in cardboard boxes.",
+   "img": 6,
+   "sfx": "none"
+  },
+  {
+   "text": "And the whole world fell into a financial crisis.",
+   "img": 7,
+   "sfx": "none"
+  },
+  {
+   "text": "Follow for more stories of money that vanished overnight.",
+   "img": 0,
+   "sfx": "none"
+  }
+ ]
+}
