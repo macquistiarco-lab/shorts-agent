@@ -28,8 +28,8 @@ This file and SYSTEM in `writer.py` win over any summary in a scheduled run's pr
    well; facts must be solid. Add `| rise` or `| fall` at the end of the topics.md line.
 3. Write `examples/<slug>.json` yourself, following the schema and rules in `writer.py`
    (SCHEMA and SYSTEM): 9-12 lines, 85-110 words (30-40 s), a hook line under 2 seconds that starts
-   on the payoff, an open question kept until the end, a last line that loops back to the hook (no
-   "follow for more"), exactly 8 image prompts, no real faces, sfx cues, hook_text, highlight_words,
+   on the payoff, an open question kept until the end, a payoff line that loops back to the hook, then a
+   short "follow for more" call as the last line (max 8 words), exactly 8 image prompts, no real faces, sfx cues, hook_text, highlight_words,
    first_comment. `examples/barings.json` shows the JSON format only: its hook and ending follow
    older rules, SYSTEM wins.
    No ANTHROPIC_API_KEY is needed: you are the writer.

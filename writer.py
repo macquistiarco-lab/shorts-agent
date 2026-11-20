@@ -53,9 +53,9 @@ Rules:
   question open until the last 2-3 lines. Put a small reveal or a twist every 2-3 lines.
   Short, concrete, present tense where it reads naturally; no filler ("Let's dive in", "Did you know").
 - Write numbers as words when spoken ("twenty billion dollars") so the TTS reads them well.
-- Last line: no "follow for more". End on the payoff or a sharp final fact that makes line 1 hit
-  again on a replay (the video loops), e.g. ending "...and it all started with one email." when
-  line 1 was about one email.
+- Second-to-last line: the payoff or a sharp final fact that makes line 1 hit again on a replay
+  (the video loops), e.g. "...and it all started with one email." when line 1 was about one email.
+- Last line: a short call to follow, max 8 words ("Follow for more fortunes made and lost.").
 - Only well-established facts. If unsure of a detail, leave it out.
 - title: max 50 chars before " #shorts", a curiosity gap with the key number, not the full answer
   ("He Made $1 Billion in One Day. Legally." / "One Email Erased $40 Billion").
