@@ -16,6 +16,7 @@ from publisher import access_token
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROME = ZoneInfo("Europe/Rome")
+SNAPSHOT = dt.datetime.now(ROME).strftime("%Y-%m-%d %H:%M")
 
 
 def rome(ts):
@@ -56,6 +57,7 @@ def videos(token):
                 "likes": int(stats.get("likeCount", 0)),
                 "comments": int(stats.get("commentCount", 0)),
                 "url": f"https://youtube.com/shorts/{v['id']}",
+                "snapshot": SNAPSHOT,
             })
     rows.sort(key=lambda r: r["goes_live"] or "", reverse=True)
     return rows
@@ -76,7 +78,7 @@ def activity(n=30):
 def main():
     out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "output", "hud")
     os.makedirs(out, exist_ok=True)
-    now = dt.datetime.now(ROME).strftime("%Y-%m-%d %H:%M")
+    now = SNAPSHOT
     code = open(os.path.abspath(__file__)).read()
     meta = [{"label": "Snapshot (Rome)", "value": now},
             {"label": "hud.py", "value": code, "type": "code", "lang": "python"}]

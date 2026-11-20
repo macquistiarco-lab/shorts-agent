@@ -44,7 +44,8 @@ This file and SYSTEM in `writer.py` win over any summary in a scheduled run's pr
    Shorts go out at 14:00 and 18:00 Rome time: `--slot auto` uploads the video as scheduled for
    the next free slot (it reads the channel, so it also sees Shorts already scheduled by the other run).
    A scheduled video cannot take comments yet: call `send_later` 5 minutes after the slot with
-   "run `python engager.py pending` in shorts-agent (pull main first) and tell me the link to pin".
+   "run `python engager.py pending` in shorts-agent (pull main first), update the HUD dashboard
+   (CLAUDE.md step 10) and tell me the link to pin".
    `engager.py pending` posts the first comment on any public recent Short that has none
    (the API cannot pin: remind the user to pin it in Studio, the command prints the link).
 8. Append a line to `topics.md` (date, slug, title), run `git pull --rebase origin main`, commit `topics.md` and
