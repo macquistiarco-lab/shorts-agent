@@ -7,3 +7,4 @@
 - 2026-11-19 | ftx | $32 Billion Empire Gone in 9 Days (programmato 21/11 14:00)
 - 2026-11-20 | lehman | A $639 Billion Bank Died Over One Weekend (programmato 21/11 18:00)
 - 2026-11-20 | theranos | A $9 Billion Company. The Machine Never Worked. (programmato 22/11 14:00) | fall
+- 2026-11-21 | soros_pound | He Made $1 Billion in One Day. Legally. (programmato 22/11 18:00) | rise
