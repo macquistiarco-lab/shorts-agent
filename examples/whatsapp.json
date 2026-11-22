@@ -1,0 +1,32 @@
+{
+ "slug": "whatsapp",
+ "title": "Facebook Rejected Him. Then Paid $19 Billion. #shorts",
+ "description": "In two thousand nine Facebook turned Brian Acton down for a job. Five years later it bought WhatsApp, the app he built with Jan Koum, for nineteen billion dollars.\nFollow for more fortunes made and lost.",
+ "hashtags": ["finance", "money", "whatsapp", "startup", "billionaire", "tech"],
+ "hook_text": "REJECTED BY FACEBOOK\nTHEN PAID $19 BILLION",
+ "highlight_words": ["BILLIONS", "FOUR HUNDRED FIFTY MILLION", "FIFTY-FIVE", "NINETEEN BILLION", "BILLIONAIRE"],
+ "first_comment": "Would you sell your app for nineteen billion, or keep it and try to build the next Facebook? 👇",
+ "images": [
+  {"prompt": "Cinematic photo-realistic smartphone glowing on a desk surrounded by towering stacks of gold coins and cash, warm golden light, dramatic lighting, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic silhouette of a man seen from behind walking away from a modern glass tech office at dusk, holding a folder, melancholic warm light, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic small cluttered startup office at night with two laptops glowing and empty coffee cups, warm desk lamp, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic close-up of a hand holding a smartphone with abstract green chat bubbles glowing on the screen, shallow depth of field, warm light, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic view from space of Earth at night covered in glowing connection lines between cities, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic small group of people seen from behind as silhouettes in a sunlit open-plan office, golden hour light, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic close-up of a hand signing a thick contract with a fountain pen on a wooden table, golden light, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic plain old government building entrance door in California at morning, weathered paint, soft warm light, film grain, vertical composition, no text, no logos, no signs"}
+ ],
+ "lines": [
+  {"text": "Facebook rejected him. Five years later, it paid him billions.", "img": 0, "sfx": "impact"},
+  {"text": "How does a job rejection turn into a fortune?", "img": 1, "sfx": "none"},
+  {"text": "In two thousand nine, Facebook turned Brian Acton down for a job.", "img": 1, "sfx": "none"},
+  {"text": "So he joined his friend Jan Koum on a tiny messaging app.", "img": 2, "sfx": "none"},
+  {"text": "No ads, no games, just messages. It was called WhatsApp.", "img": 3, "sfx": "impact"},
+  {"text": "Five years later, it had four hundred fifty million users.", "img": 4, "sfx": "tick"},
+  {"text": "And just fifty-five employees.", "img": 5, "sfx": "riser"},
+  {"text": "Then Facebook came back, with nineteen billion dollars.", "img": 6, "sfx": "impact"},
+  {"text": "Koum signed it outside the welfare office where he once got food stamps.", "img": 7, "sfx": "none"},
+  {"text": "The company that rejected Acton made him a billionaire.", "img": 0, "sfx": "tick"},
+  {"text": "Follow for more fortunes made and lost.", "img": 0, "sfx": "none"}
+ ]
+}
