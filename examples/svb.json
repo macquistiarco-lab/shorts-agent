@@ -1,0 +1,31 @@
+{
+ "slug": "svb",
+ "title": "$42 Billion Left This Bank in One Day #shorts",
+ "description": "In March twenty twenty-three, customers pulled forty-two billion dollars out of Silicon Valley Bank in a single day. By the next morning it was gone.\nFollow for more fortunes made and lost.",
+ "hashtags": ["finance", "money", "svb", "bankrun", "startups", "banking"],
+ "hook_text": "$42 BILLION GONE\nIN ONE DAY",
+ "highlight_words": ["FORTY-TWO BILLION", "BILLIONS", "TWO BILLION", "DOLLARS"],
+ "first_comment": "Would you have pulled your money out too, or stayed calm and waited? 👇",
+ "images": [
+  {"prompt": "Cinematic photo-realistic modern bank glass entrance at night with a long line of anxious silhouetted people outside, cold blue light, rain, dramatic lighting, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic close-up of a thumb pressing a glowing button on a smartphone screen in the dark, red light, tense mood, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic sunny Silicon Valley startup office with laptops and whiteboards, people seen only from behind, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic stacks of old government bond certificates in a dim vault under a single lamp, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic large screen in a dark room showing a sharply rising abstract red line chart, glowing reflections, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic empty conference room with a single phone on speaker on the table, cold light, tense mood, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic many smartphones glowing in the dark held by silhouetted hands, red notification light reflections, panic mood, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic bank front doors chained shut at dawn, a paper notice taped to the glass blurred and unreadable, somber cold light, film grain, vertical composition, no readable text, no logos, no signs"}
+ ],
+ "lines": [
+  {"text": "Forty-two billion dollars left this bank in a single day.", "img": 0, "sfx": "impact"},
+  {"text": "What made everyone run at once?", "img": 1, "sfx": "none"},
+  {"text": "Silicon Valley Bank held the money of thousands of tech startups.", "img": 2, "sfx": "none"},
+  {"text": "It had parked billions in safe, long-term government bonds.", "img": 3, "sfx": "none"},
+  {"text": "Then interest rates shot up, and those bonds lost value.", "img": 4, "sfx": "impact"},
+  {"text": "The bank sold some at a loss of nearly two billion dollars, and asked for more cash.", "img": 5, "sfx": "tick"},
+  {"text": "Founders panicked in group chats. Everyone hit withdraw from their phones.", "img": 6, "sfx": "riser"},
+  {"text": "The next morning, regulators shut it down.", "img": 7, "sfx": "impact"},
+  {"text": "Forty-two billion dollars, gone with a few taps on a phone.", "img": 1, "sfx": "tick"},
+  {"text": "Follow for more fortunes made and lost.", "img": 0, "sfx": "none"}
+ ]
+}
