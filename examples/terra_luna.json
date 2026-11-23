@@ -1,0 +1,105 @@
+{
+ "slug": "terra_luna",
+ "title": "$40 Billion Vanished in One Week #shorts",
+ "description": "In May twenty twenty-two, the TerraUSD stablecoin lost its dollar peg and its sister coin Luna went from over one hundred dollars to almost nothing in days.\nFollow for more fortunes made and lost.",
+ "hashtags": [
+  "finance",
+  "money",
+  "crypto",
+  "terraluna",
+  "stablecoin",
+  "crash"
+ ],
+ "hook_text": "$40 BILLION GONE\nIN SEVEN DAYS",
+ "highlight_words": [
+  "FORTY BILLION",
+  "ONE DOLLAR",
+  "TWENTY PERCENT",
+  "ONE HUNDRED DOLLARS",
+  "TRILLIONS"
+ ],
+ "first_comment": "Would you have trusted a coin that paid twenty percent a year, or seen the trap coming? 👇",
+ "images": [
+  {
+   "prompt": "Cinematic photo-realistic glowing golden coin cracking in half and crumbling into dust in a dark room, dramatic spotlight, film grain, vertical composition, no text, no logos, no signs"
+  },
+  {
+   "prompt": "Cinematic close-up of a single coin balanced perfectly on its edge on a glass table, cold blue light, tense mood, film grain, vertical composition, no text, no logos, no signs"
+  },
+  {
+   "prompt": "Cinematic photo-realistic glowing lines of abstract computer code floating in a dark server room, blue light, film grain, vertical composition, no readable text, no logos, no signs"
+  },
+  {
+   "prompt": "Cinematic photo-realistic smartphone lying on a desk with its screen glowing plain bright green with no interface, warm lamp light, stacks of coins beside it, film grain, vertical composition, no text, no numbers, no logos, no signs"
+  },
+  {
+   "prompt": "Cinematic photo-realistic crowd of silhouetted people pouring money into a giant glowing funnel, surreal, dark background, film grain, vertical composition, no text, no logos, no signs"
+  },
+  {
+   "prompt": "Cinematic photo-realistic trading screens in a dark room showing a vertical red line crashing down, red light on the walls, panic mood, film grain, vertical composition, no readable text, no logos, no signs"
+  },
+  {
+   "prompt": "Cinematic photo-realistic printing machine spewing endless glowing coins into a dark warehouse, chaotic, red light, film grain, vertical composition, no text, no logos, no signs"
+  },
+  {
+   "prompt": "Cinematic photo-realistic empty dark room with a single dim coin lying on a cold concrete floor under a faint light, somber mood, film grain, vertical composition, no text, no logos, no signs"
+  }
+ ],
+ "lines": [
+  {
+   "text": "Forty billion dollars vanished in a single week.",
+   "img": 0,
+   "sfx": "impact"
+  },
+  {
+   "text": "Inside a coin that promised it could never lose value.",
+   "img": 1,
+   "sfx": "none"
+  },
+  {
+   "text": "TerraUSD was a stablecoin, always worth exactly one dollar.",
+   "img": 1,
+   "sfx": "none"
+  },
+  {
+   "text": "No cash backed it. Just code, and a sister coin called Luna.",
+   "img": 2,
+   "sfx": "impact"
+  },
+  {
+   "text": "A lending app paid nearly twenty percent a year to hold it.",
+   "img": 3,
+   "sfx": "tick"
+  },
+  {
+   "text": "Billions poured in. Luna hit over one hundred dollars.",
+   "img": 4,
+   "sfx": "tick"
+  },
+  {
+   "text": "Then, in May twenty twenty-two, big holders started selling.",
+   "img": 5,
+   "sfx": "riser"
+  },
+  {
+   "text": "The dollar peg broke. The code printed trillions of Luna to save it.",
+   "img": 6,
+   "sfx": "impact"
+  },
+  {
+   "text": "Luna fell to a fraction of a cent.",
+   "img": 7,
+   "sfx": "none"
+  },
+  {
+   "text": "Forty billion dollars, gone in seven days.",
+   "img": 0,
+   "sfx": "tick"
+  },
+  {
+   "text": "Follow for more fortunes made and lost.",
+   "img": 0,
+   "sfx": "none"
+  }
+ ]
+}
