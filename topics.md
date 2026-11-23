@@ -11,3 +11,4 @@
 - 2026-11-21 | worldcom | $11 Billion in Fake Profits. Found at Night. (programmato 23/11 14:00) | fall
 - 2026-11-22 | whatsapp | Facebook Rejected Him. Then Paid $19 Billion. (programmato 23/11 18:00) | rise
 - 2026-11-22 | svb | $42 Billion Left This Bank in One Day (programmato 24/11 14:00) | fall
+- 2026-11-23 | instagram | 13 Employees. $1 Billion. 18 Months. (programmato 24/11 18:00) | rise
