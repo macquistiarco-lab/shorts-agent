@@ -14,3 +14,4 @@
 - 2026-11-23 | instagram | 13 Employees. $1 Billion. 18 Months. (programmato 24/11 18:00) | rise
 - 2026-11-23 | terra_luna | $40 Billion Vanished in One Week (programmato 25/11 14:00) | fall
 - 2026-11-24 | paulson | He Made $4 Billion Betting on a Crash (programmato 25/11 18:00) | rise
+- 2026-11-24 | mtgox | 850,000 Bitcoins Vanished. Nobody Noticed. (programmato 26/11 14:00) | fall
