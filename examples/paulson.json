@@ -1,0 +1,32 @@
+{
+ "slug": "paulson",
+ "title": "He Made $4 Billion Betting on a Crash #shorts",
+ "description": "In two thousand seven, hedge fund manager John Paulson bet against the US housing market and pulled off what was called the greatest trade ever.\nFollow for more fortunes made and lost.",
+ "hashtags": ["finance", "money", "trading", "hedgefund", "2008", "wallstreet"],
+ "hook_text": "$4 BILLION IN ONE YEAR\nBETTING ON DISASTER",
+ "highlight_words": ["FOUR BILLION", "FIFTEEN BILLION", "MILLIONS", "DOLLARS"],
+ "first_comment": "Genius or vulture? Would you have bet against the housing market if you saw it coming? 👇",
+ "images": [
+  {"prompt": "Cinematic photo-realistic towering stacks of gold bars and cash glowing in warm golden light inside a dark Manhattan office at night, city lights behind, dramatic lighting, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic suburban street of new identical houses at golden hour, perfect lawns, slightly eerie calm, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic silhouette of a man in a suit seen from behind looking at a wall of glowing charts in a dark office, warm golden light, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic close-up of a hand signing a thick financial contract with a gold pen on a dark desk, warm lamp light, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic busy Wall Street trading floor in 2006 with traders as silhouettes laughing, warm light, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic abandoned suburban house with an overgrown lawn and boarded windows at dusk, somber mood, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic wall of trading screens flashing red crashing charts in a dark room, panic mood, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic champagne glass on a desk overlooking a dark city skyline at night, warm golden glow, film grain, vertical composition, no text, no logos, no signs"}
+ ],
+ "lines": [
+  {"text": "He made four billion dollars in one year, betting on a crash.", "img": 0, "sfx": "impact"},
+  {"text": "But how do you bet against houses?", "img": 1, "sfx": "none"},
+  {"text": "In two thousand six, America's housing market looked unstoppable.", "img": 1, "sfx": "none"},
+  {"text": "Hedge fund manager John Paulson saw millions of risky mortgages about to fail.", "img": 2, "sfx": "none"},
+  {"text": "So he bought insurance against them, called credit default swaps.", "img": 3, "sfx": "none"},
+  {"text": "It cost him little. Wall Street thought he was crazy.", "img": 4, "sfx": "impact"},
+  {"text": "Then, in two thousand seven, homeowners stopped paying.", "img": 5, "sfx": "riser"},
+  {"text": "The mortgage bonds collapsed. His insurance paid out.", "img": 6, "sfx": "impact"},
+  {"text": "His funds made about fifteen billion dollars.", "img": 7, "sfx": "tick"},
+  {"text": "Four billion went to him alone. The greatest trade ever.", "img": 0, "sfx": "tick"},
+  {"text": "Follow for more fortunes made and lost.", "img": 0, "sfx": "none"}
+ ]
+}
