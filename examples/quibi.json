@@ -1,0 +1,104 @@
+{
+ "slug": "quibi",
+ "title": "$1.75 Billion Gone in 6 Months #shorts",
+ "description": "Quibi raised one point seven five billion dollars from Hollywood and investors for a phone-only streaming app. Six months after launch, it announced it was shutting down.\nFollow for more fortunes made and lost.",
+ "hashtags": [
+  "finance",
+  "money",
+  "quibi",
+  "startup",
+  "streaming",
+  "fail"
+ ],
+ "hook_text": "$1.75 BILLION\nGONE IN 6 MONTHS",
+ "highlight_words": [
+  "ONE POINT SEVEN FIVE BILLION",
+  "SIX MONTHS",
+  "TEN-MINUTE",
+  "DOLLARS"
+ ],
+ "first_comment": "Bad idea, or just terrible timing? Would Quibi have survived without the pandemic? 👇",
+ "images": [
+  {
+   "prompt": "Cinematic photo-realistic smartphone lying face up on a dark floor with its glowing screen cracking, burning banknotes around it, dramatic red light, film grain, vertical composition, no text, no logos, no signs"
+  },
+  {
+   "prompt": "Cinematic photo-realistic pile of cash burning in a metal bin in a dark room, orange flames, film grain, vertical composition, no text, no logos, no signs"
+  },
+  {
+   "prompt": "Cinematic photo-realistic glamorous Hollywood sound stage with bright film lights and empty director chairs, film grain, vertical composition, no readable text, no logos, no signs"
+  },
+  {
+   "prompt": "Cinematic photo-realistic luxury boardroom at night with a giant glowing check-shaped screen and silhouettes applauding, film grain, vertical composition, no readable text, no logos, no signs"
+  },
+  {
+   "prompt": "Cinematic close-up of a hand holding a phone vertically on a busy subway platform, blurred commuters, film grain, vertical composition, no readable text, no logos, no signs"
+  },
+  {
+   "prompt": "Cinematic photo-realistic empty city street during lockdown in spring, closed shops, eerie quiet, film grain, vertical composition, no readable text, no logos, no signs"
+  },
+  {
+   "prompt": "Cinematic photo-realistic living room at night with a family silhouetted watching a big TV, a phone lying ignored on the table, film grain, vertical composition, no readable text, no logos, no signs"
+  },
+  {
+   "prompt": "Cinematic photo-realistic empty modern office with chairs stacked and lights being switched off, cardboard boxes, somber mood, film grain, vertical composition, no text, no logos, no signs"
+  }
+ ],
+ "lines": [
+  {
+   "text": "One point seven five billion dollars, gone in six months.",
+   "img": 0,
+   "sfx": "impact"
+  },
+  {
+   "text": "How do you burn that much that fast?",
+   "img": 1,
+   "sfx": "none"
+  },
+  {
+   "text": "Quibi was a streaming app for phones, backed by Hollywood's biggest names.",
+   "img": 2,
+   "sfx": "none"
+  },
+  {
+   "text": "It raised one point seven five billion dollars before launch.",
+   "img": 3,
+   "sfx": "tick"
+  },
+  {
+   "text": "Ten-minute shows, made only for your phone.",
+   "img": 4,
+   "sfx": "none"
+  },
+  {
+   "text": "It launched in April twenty twenty. Right as the world stayed home.",
+   "img": 5,
+   "sfx": "impact"
+  },
+  {
+   "text": "Nobody was on the go. And it couldn't play on your TV.",
+   "img": 6,
+   "sfx": "none"
+  },
+  {
+   "text": "Subscribers never came.",
+   "img": 6,
+   "sfx": "riser"
+  },
+  {
+   "text": "Six months after launch, Quibi announced it was shutting down.",
+   "img": 7,
+   "sfx": "impact"
+  },
+  {
+   "text": "One point seven five billion dollars, for an app that lasted six months.",
+   "img": 0,
+   "sfx": "tick"
+  },
+  {
+   "text": "Follow for more fortunes made and lost.",
+   "img": 0,
+   "sfx": "none"
+  }
+ ]
+}
