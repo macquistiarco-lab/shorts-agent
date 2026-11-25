@@ -1,0 +1,31 @@
+{
+ "slug": "broadcast_com",
+ "title": "A Money-Losing Startup Sold for $5.7 Billion #shorts",
+ "description": "In nineteen ninety-nine, Yahoo bought Mark Cuban's Broadcast.com for five point seven billion dollars in stock. Then he protected his fortune right before the dot-com crash.\nFollow for more fortunes made and lost.",
+ "hashtags": ["finance", "money", "markcuban", "dotcom", "startup", "billionaire"],
+ "hook_text": "LOSING MONEY\nSOLD FOR $5.7 BILLION",
+ "highlight_words": ["FIVE POINT SEVEN BILLION", "BILLIONAIRE", "NINETY PERCENT", "DOLLARS"],
+ "first_comment": "Would you have cashed out like Cuban, or held your stock and ridden the bubble? 👇",
+ "images": [
+  {"prompt": "Cinematic photo-realistic 1999 office desk with an old CRT computer monitor glowing next to towering stacks of cash and gold, warm golden light, dramatic lighting, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic silhouette of a man in a casual shirt seen from behind looking out of a Dallas office window at night, warm light, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic vintage 1990s radio studio with microphones and old computers streaming, warm amber light, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic late 1990s tech party with silhouetted people celebrating, confetti, purple neon light, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic close-up of hands shaking over a signed contract on a glossy boardroom table, golden light, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic giant soap bubble glowing over a city skyline at dusk about to burst, surreal, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic wall of old CRT trading screens showing red crashing charts in a dark room, panic mood, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic heavy steel safe with its door closed on a dark floor, gold light glowing from its edges, film grain, vertical composition, no text, no logos, no signs"}
+ ],
+ "lines": [
+  {"text": "A money-losing startup sold for five point seven billion dollars.", "img": 0, "sfx": "impact"},
+  {"text": "And the smartest move came after the sale.", "img": 1, "sfx": "none"},
+  {"text": "In nineteen ninety-nine, Mark Cuban's Broadcast dot com streamed radio and sports online.", "img": 2, "sfx": "none"},
+  {"text": "It was losing money. But it was the internet boom.", "img": 3, "sfx": "none"},
+  {"text": "Yahoo bought it for five point seven billion dollars, paid in Yahoo stock.", "img": 4, "sfx": "tick"},
+  {"text": "Cuban became a billionaire overnight, on paper.", "img": 1, "sfx": "impact"},
+  {"text": "But he feared the bubble would pop. So he hedged his shares.", "img": 5, "sfx": "riser"},
+  {"text": "Then the dot-com crash hit. Yahoo's stock lost about ninety percent.", "img": 6, "sfx": "impact"},
+  {"text": "His fortune stayed safe. A money-losing startup made him a billionaire for good.", "img": 7, "sfx": "tick"},
+  {"text": "Follow for more fortunes made and lost.", "img": 0, "sfx": "none"}
+ ]
+}
