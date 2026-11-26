@@ -17,3 +17,4 @@
 - 2026-11-24 | mtgox | 850,000 Bitcoins Vanished. Nobody Noticed. (programmato 26/11 14:00) | fall
 - 2026-11-25 | broadcast_com | A Money-Losing Startup Sold for $5.7 Billion (programmato 26/11 18:00) | rise
 - 2026-11-25 | quibi | $1.75 Billion Gone in 6 Months (programmato 27/11 14:00) | fall
+- 2026-11-26 | youtube_sale | A 2-Year-Old Website Sold for $1.65 Billion (programmato 27/11 18:00) | rise
