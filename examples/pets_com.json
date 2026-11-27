@@ -1,0 +1,32 @@
+{
+ "slug": "pets_com",
+ "title": "$300 Million Gone in 268 Days #shorts",
+ "description": "Pets.com went public in February two thousand with a famous sock puppet and a Super Bowl ad. Two hundred sixty-eight days later it shut down.\nFollow for more fortunes made and lost.",
+ "hashtags": ["finance", "money", "dotcom", "startup", "bubble", "fail"],
+ "hook_text": "$300 MILLION\nGONE IN 268 DAYS",
+ "highlight_words": ["THREE HUNDRED MILLION", "TWO HUNDRED SIXTY-EIGHT", "EIGHTY MILLION", "DOLLARS"],
+ "first_comment": "Bad idea, or just too early? Would Pets.com work today? 👇",
+ "images": [
+  {"prompt": "Cinematic photo-realistic abandoned warehouse full of stacked pet food bags under a single spotlight, dust in the air, dramatic lighting, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic close-up of a bowl of dry pet food on a kitchen floor next to an old 1999 computer mouse, warm light, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic plain sock puppet with button eyes lying on a dark studio floor under a spotlight, melancholic, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic 2000 stock exchange floor with silhouetted traders celebrating and confetti falling, warm light, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic delivery truck loading heavy sacks of pet food at night, a pile of cash burning nearby, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic close-up of a cardboard shipping box tearing open with coins spilling out onto a warehouse floor, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic old CRT monitors showing red crashing charts in a dark office, panic mood, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic empty dot-com office with beanbags and dead plants, chairs stacked, cold grey light, somber mood, film grain, vertical composition, no text, no logos, no signs"}
+ ],
+ "lines": [
+  {"text": "Three hundred million dollars, gone in two hundred sixty-eight days.", "img": 0, "sfx": "impact"},
+  {"text": "For a company that sold pet food online.", "img": 1, "sfx": "none"},
+  {"text": "Pets dot com had a sock puppet mascot and a Super Bowl ad.", "img": 2, "sfx": "none"},
+  {"text": "In February two thousand, it went public and raised over eighty million dollars.", "img": 3, "sfx": "tick"},
+  {"text": "But it sold heavy bags of food for less than they cost to ship.", "img": 4, "sfx": "impact"},
+  {"text": "Every sale lost money.", "img": 5, "sfx": "none"},
+  {"text": "Then the dot-com bubble burst.", "img": 6, "sfx": "riser"},
+  {"text": "In November two thousand, Pets dot com shut down.", "img": 7, "sfx": "impact"},
+  {"text": "Just two hundred sixty-eight days after going public.", "img": 7, "sfx": "none"},
+  {"text": "Three hundred million dollars, lost shipping dog food.", "img": 0, "sfx": "tick"},
+  {"text": "Follow for more fortunes made and lost.", "img": 0, "sfx": "none"}
+ ]
+}
