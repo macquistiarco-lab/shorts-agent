@@ -1,0 +1,32 @@
+{
+ "slug": "minecraft",
+ "title": "A Side Project Sold for $2.5 Billion #shorts",
+ "description": "In two thousand nine, a Swedish programmer started a block-building game after work. In twenty fourteen, Microsoft bought his studio, Mojang, for two and a half billion dollars.\nFollow for more fortunes made and lost.",
+ "hashtags": ["finance", "money", "minecraft", "gaming", "microsoft", "startup"],
+ "hook_text": "ONE MAN'S SIDE PROJECT\nSOLD FOR $2.5 BILLION",
+ "highlight_words": ["TWO AND A HALF BILLION", "TEN EUROS", "MILLIONS", "DOLLARS"],
+ "first_comment": "Would you have sold your game for two and a half billion, or kept building it forever? 👇",
+ "images": [
+  {"prompt": "Cinematic photo-realistic pile of small wooden and grass-textured cubes on a desk next to stacks of gold coins and cash, warm golden light, dramatic lighting, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic close-up of a hand placing a small wooden cube on top of a tower of cubes, warm light, shallow depth of field, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic small Stockholm apartment at night, a glowing computer monitor on a cluttered desk, snow outside the window, man seen from behind, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic computer screen glowing with an abstract blocky landscape of cubes and pixel trees in a dark room, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic kids seen from behind sitting on a sofa playing a blocky video game on a big TV, warm living room light, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic empty office desk with a nameplate-free chair pushed back and a resignation letter envelope, warm morning light, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic close-up of two hands shaking over a signed contract on a glass boardroom table, Seattle skyline at dusk behind, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic giant tower made of glowing golden cubes rising into the night sky over a city, surreal, film grain, vertical composition, no text, no logos, no signs"}
+ ],
+ "lines": [
+  {"text": "One man's side project sold for two and a half billion dollars.", "img": 0, "sfx": "impact"},
+  {"text": "And it was made of blocks.", "img": 1, "sfx": "none"},
+  {"text": "In two thousand nine, a Swedish programmer coded a game after work.", "img": 2, "sfx": "none"},
+  {"text": "No story. Just blocks you could break and build.", "img": 3, "sfx": "none"},
+  {"text": "He sold early versions online for about ten euros each.", "img": 3, "sfx": "tick"},
+  {"text": "Players spread it by word of mouth. Millions bought it before it was finished.", "img": 4, "sfx": "impact"},
+  {"text": "He quit his job. The game was called Minecraft.", "img": 5, "sfx": "none"},
+  {"text": "Then Microsoft called.", "img": 5, "sfx": "riser"},
+  {"text": "In twenty fourteen, it bought his studio for two and a half billion dollars.", "img": 6, "sfx": "impact"},
+  {"text": "Two and a half billion dollars, for a world made of blocks.", "img": 7, "sfx": "tick"},
+  {"text": "Follow for more fortunes made and lost.", "img": 0, "sfx": "none"}
+ ]
+}
