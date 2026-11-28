@@ -1,0 +1,32 @@
+{
+ "slug": "blockbuster",
+ "title": "They Could Have Bought Netflix for $50 Million #shorts",
+ "description": "In two thousand, Netflix's founders offered to sell their company to Blockbuster for fifty million dollars. Blockbuster said no. Ten years later it was bankrupt.\nFollow for more fortunes made and lost.",
+ "hashtags": ["finance", "money", "blockbuster", "netflix", "business", "fail"],
+ "hook_text": "NETFLIX FOR $50 MILLION\nTHEY SAID NO",
+ "highlight_words": ["FIFTY MILLION", "HUNDREDS OF BILLIONS", "DOLLARS"],
+ "first_comment": "Biggest business mistake ever, or would you have said no too? 👇",
+ "images": [
+  {"prompt": "Cinematic photo-realistic abandoned video rental store at night with empty shelves and a few dusty VHS cases, flickering fluorescent light, dramatic lighting, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic luxury corporate boardroom in Dallas with silhouetted executives laughing around a table, warm light, film grain, vertical composition, no text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic busy 2000s video rental store full of shelves of movies, customers seen from behind, warm bright light, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic close-up of red paper DVD mailer envelopes stacked on a small office desk, warm lamp light, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic close-up of a contract sliding across a glossy table being pushed back by a hand, tense mood, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic family silhouetted on a sofa watching a glowing TV with a streaming menu of blurred posters, cozy evening, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic closed video store with chained doors and empty parking lot at dusk, somber mood, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic giant glowing red server room data center stretching into darkness, film grain, vertical composition, no text, no logos, no signs"}
+ ],
+ "lines": [
+  {"text": "Blockbuster could have bought Netflix for fifty million dollars.", "img": 0, "sfx": "impact"},
+  {"text": "It said no. And laughed.", "img": 1, "sfx": "none"},
+  {"text": "In two thousand, Blockbuster ruled movie rentals, with thousands of stores.", "img": 2, "sfx": "none"},
+  {"text": "Netflix was a tiny company mailing DVDs, and losing money.", "img": 3, "sfx": "none"},
+  {"text": "Its founders offered to sell for fifty million dollars.", "img": 4, "sfx": "tick"},
+  {"text": "Blockbuster's boss passed.", "img": 1, "sfx": "impact"},
+  {"text": "Then streaming arrived, and customers stopped coming to the store.", "img": 5, "sfx": "riser"},
+  {"text": "In twenty ten, Blockbuster filed for bankruptcy.", "img": 6, "sfx": "impact"},
+  {"text": "Netflix is now worth hundreds of billions.", "img": 7, "sfx": "tick"},
+  {"text": "All because of one fifty million dollar no.", "img": 0, "sfx": "none"},
+  {"text": "Follow for more fortunes made and lost.", "img": 0, "sfx": "none"}
+ ]
+}
