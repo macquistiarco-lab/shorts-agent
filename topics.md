@@ -21,3 +21,4 @@
 - 2026-11-26 | wework | A $47 Billion Company That Rented Desks (programmato 28/11 14:00) | fall
 - 2026-11-27 | minecraft | A Side Project Sold for $2.5 Billion (programmato 28/11 18:00) | rise
 - 2026-11-27 | pets_com | $300 Million Gone in 268 Days (programmato 29/11 14:00) | fall
+- 2026-11-28 | roaring_kitty | $53,000 Into $48 Million With a Dying Stock (programmato 29/11 18:00) | rise

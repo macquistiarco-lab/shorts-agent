@@ -1,0 +1,32 @@
+{
+ "slug": "roaring_kitty",
+ "title": "$53,000 Into $48 Million With a Dying Stock #shorts",
+ "description": "In January twenty twenty-one, Keith Gill, known online as Roaring Kitty, turned a bet on GameStop worth about fifty-three thousand dollars into roughly forty-eight million dollars on paper.\nFollow for more fortunes made and lost.",
+ "hashtags": ["finance", "money", "gamestop", "stocks", "wallstreetbets", "investing"],
+ "hook_text": "$53,000\nBECAME $48 MILLION",
+ "highlight_words": ["FIFTY-THREE THOUSAND", "FORTY-EIGHT MILLION", "TWENTY TIMES", "BILLIONS"],
+ "first_comment": "Would you have sold at one million, or held for forty-eight like he did? 👇",
+ "images": [
+  {"prompt": "Cinematic photo-realistic gaming chair in a dark basement room lit by a glowing monitor showing a soaring green chart, stacks of cash on the desk, dramatic lighting, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic empty shopping mall video game store with shelves of game cases and a closing-down feel, dim light, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic silhouette of a man in a headband seen from behind at a desk with several monitors in a small home office at night, warm lamp light, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic Manhattan hedge fund office at night with silhouetted traders and red charts on screens, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic close-up of a webcam and microphone on a cluttered desk with a cat poster blurred on the wall, warm light, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic thousands of smartphones glowing green in a dark crowd, people seen from behind, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic giant screen showing a vertical green rocket-like chart line in a dark trading room, film grain, vertical composition, no readable text, no logos, no signs"},
+  {"prompt": "Cinematic photo-realistic champagne bottle and stacks of cash on a modest kitchen table, warm golden light, film grain, vertical composition, no text, no logos, no signs"}
+ ],
+ "lines": [
+  {"text": "He turned fifty-three thousand dollars into forty-eight million.", "img": 0, "sfx": "impact"},
+  {"text": "With a stock everyone said was dying.", "img": 1, "sfx": "none"},
+  {"text": "In twenty nineteen, Keith Gill bet on GameStop, a struggling video game store.", "img": 2, "sfx": "none"},
+  {"text": "Big Wall Street funds were betting it would fail.", "img": 3, "sfx": "none"},
+  {"text": "He posted his trades online, under the name Roaring Kitty.", "img": 4, "sfx": "none"},
+  {"text": "Millions of small investors started buying too.", "img": 5, "sfx": "impact"},
+  {"text": "In January twenty twenty-one, the stock exploded, up more than twenty times in weeks.", "img": 6, "sfx": "riser"},
+  {"text": "Hedge funds lost billions.", "img": 3, "sfx": "impact"},
+  {"text": "His account hit about forty-eight million dollars.", "img": 7, "sfx": "tick"},
+  {"text": "Fifty-three thousand dollars, turned into forty-eight million, with a dying stock.", "img": 0, "sfx": "tick"},
+  {"text": "Follow for more fortunes made and lost.", "img": 0, "sfx": "none"}
+ ]
+}
